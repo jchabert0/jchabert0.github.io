@@ -14,7 +14,9 @@ body {
 .navbar .navbar-brand span {
   font-weight: bold;
 }
-
+.nav-link {
+  color: linear-gradient(-180deg, #fd7054 0, #ff3b6a 100%);
+}
 .hero {
   padding: 150px 0;
 }
