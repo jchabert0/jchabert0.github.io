@@ -14,9 +14,21 @@ body {
 .navbar .navbar-brand span {
   font-weight: bold;
 }
-.nav-link {
-  color: linear-gradient(-180deg, #fd7054 0, #ff3b6a 100%);
+
+.nav-item:hover {
+  color: #ff3b6a !important;
 }
+.btnContact {
+  color: #fd7054 !important;
+  font-size: 25px;
+  margin: 1rem;
+}
+.btnContact:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ff3b6a !important;
+}
+
 .hero {
   padding: 150px 0;
 }
@@ -54,7 +66,9 @@ body {
 .hero img {
   width: 615px;
 }
-
+.contact {
+  margin-top: 120px;
+}
 .skills {
   margin-top: 120px;
   margin-bottom: 120px;
@@ -170,6 +184,18 @@ body {
   .hero .hero-img img {
     width: auto;
   }
+  /* .img-background {
+    background-image : url(../img/macbook.png);
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .img-inside {
+    background-image : url(../img/projet.png);
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+  } */
   .hero .hero-resume {
     margin-top: 30px;
   }
@@ -198,6 +224,7 @@ body {
             justify-content: center;
   }
 }
+
 
 @media (max-width: 768px) {
   .about .img-resume {
