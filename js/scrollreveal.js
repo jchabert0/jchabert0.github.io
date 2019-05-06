@@ -1,13 +1,14 @@
 
-function cardScroll(card, origin) {
+function scrElement(card, origin, delay) {
   ScrollReveal().reveal(card, {
     origin: origin,
     distance: '50px',
-    duration: 2000
+    duration: 2000,
+    delay: delay
   });
 }
 
-cardScroll('.leftCard', 'left');
-cardScroll('.rightCard', '.right');
-cardScroll('.topCard', 'top');
-cardScroll('.bottomCard', 'bottom');
+scrElement('.scrCard', 'right', 100);
+scrElement('.citation', 'bottom', 0);
+scrElement('.photo', 'left', 0);
+scrElement('.about-resume', 'right', 200)
