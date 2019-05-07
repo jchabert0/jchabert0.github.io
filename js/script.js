@@ -1,5 +1,5 @@
 ScrollReveal().reveal('.rounded-circle', {
-    delay: 230,
+    // delay: 230,
     duration: 300,
     reset: true,
     origin:"left",
@@ -7,7 +7,7 @@ ScrollReveal().reveal('.rounded-circle', {
 });
 
 ScrollReveal().reveal('.about-resume', {
-    delay: 350,
+    // delay: 350,
     duration: 300,
     reset: true,
     origin:"right",
@@ -15,7 +15,7 @@ ScrollReveal().reveal('.about-resume', {
 });
 
 ScrollReveal().reveal('.skills .card', {
-    delay: 375,
+    // delay: 375,
     duration: 230,
     reset: true,
     origin:"left",
@@ -24,7 +24,7 @@ ScrollReveal().reveal('.skills .card', {
 });
 
 ScrollReveal().reveal('.projects .card', {
-    delay: 375,
+    // delay: 375,
     duration: 100,
     reset: true,
     origin:"left",
@@ -35,7 +35,7 @@ ScrollReveal().reveal('.projects .card', {
 
 
 ScrollReveal().reveal('.citation', {
-    delay: 600,
+    // delay: 600,
     duration: 500,
     reset: true,
     origin:"bottom",
