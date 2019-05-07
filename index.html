@@ -12,32 +12,30 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,800" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="img/ico.png" />
-    <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
         crossorigin="anonymous">
-    <!-- Scrollreveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <link rel="icon" type="image/png" href="img/ico.png" />
+
 </head>
 
-<body id="body">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100">
         <div class="container">
-            <a class="navbar-brand">Jeremie
+            <a class="navbar-brand" href="#">Jeremie
                 <span> CHABERT</span>
             </a>
+            <a href="./img/CV_Jeremie_CHABERT.pdf" class="btn btn-primary ml-auto" id="cv-btn">
+                <i class="fas fa-download"></i>CV</a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a href="./img/CV_Jérémie_CHABERT.pdf" class="btnContact nav-item nav-link" download>
-                        <i class="fas fa-arrow-down"> cv </i>
-                    </a>
-                    <a href="http://www.linkedin.com/in/jérémie-chabert" target="_blank" class="btnContact nav-item nav-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
                     <a class="nav-item nav-link" href="#skills">Compétences</a>
                     <a class="nav-item nav-link" href="#projects">Projets</a>
                 </div>
@@ -45,14 +43,26 @@
         </div>
 
     </nav>
-    <section class="hero" id="hero">
+    <section class="hero">
         <div class="container d-flex align-items-center h-100 justify-content-center">
             <div class="row d-flex align-items-center">
                 <div class="hero-resume col-lg-5">
                     <h1>Jeremie Chabert</h1>
-                    <h2>Developpeur web front</h2>
+                    <h2>Developpeur web full-stack</h2>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-chabert/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://gitlab.com/users/jeremieSIMPLON6/projects" target="_blank">
+                                <i class="fab fa-gitlab"></i>
+                            </a>
+                        </li>
+                    </ul>
                     <div class="hero-btn">
-                        <a href="./img/CV_Jérémie_CHABERT.pdf" class="btn" download>Télécharger mon CV</a>
+                        <a href="./img/CV_Jeremie_CHABERT.pdf" class="btn">Télécharger mon CV</a>
                     </div>
                 </div>
                 <div class="hero-img col-lg-7">
@@ -64,9 +74,9 @@
 
     <section class="about">
         <div class="container">
-            <div class="row d-flex align-items-center">
+            <div class="row  d-flex align-items-center">
                 <div class="col-md-3 col-sm-12 img-resume">
-                    <img class="rounded-circle photo" src="img/photo_CV.jpg" alt="">
+                    <img class="rounded-circle" src="img/photo_CV.jpg" alt="">
                 </div>
                 <div class="col-md-9 col-sm-12 about-resume">
                     <p>Après sept ans dans le prêt-à-porter, j'ai eu envie de découvrir un métier plus cérébral. L'idée de cette
@@ -79,73 +89,59 @@
         </div>
     </section>
 
+
     <section class="skills" id="skills">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-4 col-sm-8 mt-sm-5">
+                <div class="col-lg-4 col-sm-8 card-box">
                     <div class="card">
-                        <div class="card-title">
-
+                        <div class="card-img-top">
+                            <img src="img/langage.svg" alt="" class="mx-auto">
                         </div>
-                        <img src="img/langage.svg" alt="" class="card-img-top mx-auto">
-                        <div class="card-body d-flex align-items-center justify-content-center">
+
+                        <div class="card-body d-flex justify-content-center">
                             <div class="card-text">
                                 <h3>Langages</h3>
                                 <ul>
-                                    <li>
-                                        <i class="fab fa-html5 iconsLanguage"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fab fa-css3-alt iconsLanguage"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fab fa-sass iconsLanguage"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fab fa-js-square iconsLanguage"></i>
-                                    </li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>Php 7</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-8 mt-sm-5">
+                <div class="col-lg-4 col-sm-8 card-box">
                     <div class="card">
-                        <img src="img/framework.svg" alt="" class="card-img-top mx-auto" style="height: 125px;">
-                        <div class="card-body d-flex align-items-center justify-content-center">
+                        <div class="card-img-top">
+                            <img src="img/framework.svg" alt="" class="mx-auto">
+                        </div>
+                        <div class="card-body d-flex justify-content-center">
                             <div class="card-text">
-                                <h3>Framework</h3>
+                                <h3>Frameworks</h3>
                                 <ul>
-                                    <li>
-                                        <i class="fab fa-angular iconsLanguage"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fab fa-vuejs iconsLanguage"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fab fa-symfony iconsLanguage"></i>
-                                    </li>
+                                    <li>Angular 7</li>
+                                    <li>Symfony 4</li>
+                                    <li>Vue.js</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-8 mt-sm-5">
+                <div class="col-lg-4 col-sm-8 card-box">
                     <div class="card">
-                        <img src="img/autres.svg" alt="" class="card-img-top mx-auto" style="height: 125px;">
-                        <div class="card-body d-flex align-items-center justify-content-center">
+                        <div class="card-img-top">
+                            <img src="img/other.svg" alt="" class="mx-auto">
+                        </div>
+                        <div class="card-body d-flex justify-content-center">
                             <div class="card-text">
-                                <h3>Autre</h3>
+                                <h3>Autres</h3>
                                 <ul>
-                                    <li>
-                                        <i class="fab fa-gitlab iconsLanguage"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fab fa-bootstrap iconsLanguage"></i>
-                                    </li>
-                                    <li style="font-size: 20px;">
-                                        JQuery
-                                    </li>
+                                    <li>Git</li>
+                                    <li>Agile</li>
+                                    <li>Docker</li>
+                                    <li>Bootstrap</li>
                                 </ul>
                             </div>
                         </div>
@@ -161,89 +157,94 @@
             <div class="row d-flex justify-content-center">
                 <div class="citation-text">
                     <h4>
-                        <span>"</span> IN MEDIO STAT VIRTUS
-                        <span>"</span>
+                        <span>" </span>Un truc plus fun qu'Aristote ?
+                        <span> "</span>
                     </h4>
-                    <p style="text-align: center; margin-bottom:10px; font-size: .8rem ">La vérité est dans le juste milieu</p>
-                    <h5 class="text-center">Aristote</h5>
+                    <h5 class="text-center">Moi-même - 2019</h5>
                 </div>
 
             </div>
     </section>
 
     <section class="projects" id="projects">
-        <div class="container d-flex justify-content-center">
-            <div class="row d-flex align-items-center justify-content-center">
-                <div class="col-lg-4 col-sm-8">
-                    <a href="https://www.simplonlyon.fr/promo6/jchabert/pokemon_battle/src/" class="card scrCard btn h-100">
-                        <img src="" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h3>CV
-                                </h3>
-                                <p>Version intéractif de mon CV en HTML, CSS et Javascript.</p>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 col-sm-8 mb-4">
+                    <a href="">
+                        <div class="card h-100">
+                            <img src="" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h3>CV</h3>
+                                    <p>Version intéractif de mon CV en HTML, CSS et Javascript.</p>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-
-                <div class="col-lg-4 col-sm-8">
-                    <a href="./date/form.html" class="card scrCard btn h-100">
-                        <img src="" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h3>Combat Pokémon
-                                </h3>
-                                <p>Orienté objet, ce projet est ma première approche du Javascript.</p>
+                <div class="col-lg-4 col-sm-8 mb-4">
+                    <a href="">
+                        <div class="card h-100">
+                            <img src="" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h3>Combat Pokémon</h3>
+                                    <p>Orienté objet, ce projet est ma première approche du Javascript.</p>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-
-
-                <div class="col-lg-4 col-sm-8">
-                    <a href="./date/form.html" class="card scrCard btn h-100">
-                        <img src="" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h3>Formulaire date
-                                </h3>
-                                <p>Validation des champs pour l'enregistrement d'une date.</p>
+                <div class="col-lg-4 col-sm-8 mb-4">
+                    <a href="">
+                        <div class="card h-100">
+                            <img src="" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h3>Formulaire date</h3>
+                                    <p>Validation des champs pour l'enregistrement d'une date.</p>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-8">
-                    <a href="./sortable/sortable.html" class="card scrCard btn h-100">
-                        <img src="" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h3>Drag & drop</h3>
-                                <p>Avec la librairie Sortable.js, mise en place d'un drag & drop.</p>
+                <div class="col-lg-4 col-sm-8 mb-4">
+                    <a href="">
+                        <div class="card h-100">
+                            <img src="" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h3>Drag & drop</h3>
+                                    <p>Avec la librairie Sortable.js, mise en place d'un drag & drop.</p>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-8">
-                    <a href="./planning/planning.html" class="card scrCard btn h-100">
-                        <img src="" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h3>Planning</h3>
-                                <p>En collaboration avec Nicolas mon tuteur, sychronisation des réservations sur un planning
-                                    intéractif
-                                </p>
+                <div class="col-lg-4 col-sm-8 mb-4">
+                    <a href="">
+                        <div class="card h-100">
+                            <img src="" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h3>Statistiques</h3>
+                                    <p>Représentation de statistiques par différents graphiques en ApexChart.js</p>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-8">
-                    <a href="./stats/stats.html" class="card scrCard btn h-100">
-                        <img src="" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h3>Statistiques</h3>
-                                <p>Représentation de statistiques par différents graphiques en ApexChart.js</p>
+                <div class="col-lg-4 col-sm-8 mb-4">
+                    <a href="">
+                        <div class="card h-100">
+                            <img src="" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h3>Planning</h3>
+                                    <p>En collaboration avec Nicolas mon tuteur, sychronisation des réservations sur un planning
+                                        intéractif
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -252,7 +253,8 @@
         </div>
     </section>
 
-    <p class="text-center">Design & développement Jeremie Chabert</p>
+
+    <p class="text-center mt-5">Design & développement Jeremie Chabert</p>
 
 
     <!-- Optional JavaScript -->
@@ -260,14 +262,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous">
         </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous">
         </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous">
         </script>
-    <!-- Scrollreveal -->
-    <script src="./js/scrollreveal.js"></script>
+    <script src="js/script.js"></script>
+
+
 </body>
 
 </html>
