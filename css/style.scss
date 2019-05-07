@@ -324,7 +324,12 @@ body {
       li {
         padding: 10px;
         font-size: 25px;
-       
+        a {
+            color: black;
+            &:hover {
+                color: #ff3b6a !important;
+              }
+          }
+        
     }
-   
 }

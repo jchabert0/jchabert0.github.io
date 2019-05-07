@@ -331,10 +331,12 @@ body {
   padding: 10px;
   font-size: 25px;
 }
+
 .social-links li a {
   color: black;
 }
+
 .social-links li a:hover {
-  color: #ff3b6a;
+  color: #ff3b6a !important;
 }
 /*# sourceMappingURL=style.css.map */
