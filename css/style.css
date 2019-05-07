@@ -331,4 +331,10 @@ body {
   padding: 10px;
   font-size: 25px;
 }
+.social-links li a {
+  color: black;
+}
+.social-links li a:hover {
+  color: #ff3b6a;
+}
 /*# sourceMappingURL=style.css.map */
