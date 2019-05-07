@@ -33,7 +33,6 @@ ScrollReveal().reveal('.projects .card', {
 });
 
 
-
 ScrollReveal().reveal('.citation', {
     delay: 600,
     duration: 500,
