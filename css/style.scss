@@ -126,7 +126,7 @@ body {
     img {
         height: 190px;
         width: 190px;
-        object-fit: fill;
+        object-fit: cover;
     }
 
 }
@@ -144,6 +144,10 @@ body {
                 color: #ff3b6a;
                 font-weight: 900;
                 font-size: 25px;
+            }
+            figcaption {
+                font-size: 15px;
+                text-align: center;
             }
         }
 

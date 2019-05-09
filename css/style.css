@@ -136,8 +136,8 @@ body {
 .about img {
   height: 190px;
   width: 190px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .citation {
@@ -154,6 +154,11 @@ body {
   color: #ff3b6a;
   font-weight: 900;
   font-size: 25px;
+}
+
+.citation .citation-text h4 figcaption {
+  font-size: 15px;
+  text-align: center;
 }
 
 .citation .citation-text h5 {
