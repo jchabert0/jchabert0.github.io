@@ -1,287 +1,210 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Jeremie Chabert</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,800" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="img/ico.png" />
-
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VueJS</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 
 </head>
 
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light position-fixed w-100">
-        <div class="container">
-            <a class="navbar-brand" href="#">Jeremie
-                <span> CHABERT</span>
-            </a>
-            <a href="./img/CV_Jeremie_CHABERT.pdf" class="btn btn-primary ml-auto" target="_blank" id="cv-btn">
-                <i class="fas fa-download"></i>CV</a>
+<body class="has-navbar-fixed-top">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <section id="navbar">
 
-            <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#toSkills">Compétences</a>
-                    <a class="nav-item nav-link" href="#toProjects">Projets</a>
-                </div>
-            </div>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+
+      <div class="navbar-brand">
+
+        <v-icon type="navbar-item nav-icon" url="https://vuejs.org/" icon="fab fa-vuejs"></v-icon>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <v-link type="navbar-item nav-text" url='#skill' title="Competences"></v-link>
+          <v-link type="navbar-item nav-text" url='#projects' title="Projets"></v-link>
+          <v-link type="navbar-item nav-text" url='#footer' title="Technologies"></v-link>
+
         </div>
-
+      </div>
+      </div>
+      </div>
     </nav>
-    <section class="hero">
-        <div class="container d-flex align-items-center h-100 justify-content-center">
-            <div class="row d-flex align-items-center">
-                <div class="hero-resume col-lg-5">
-                    <h1>Jeremie Chabert</h1>
-                    <h2>Developpeur web full-stack</h2>
-                    <ul class="social-links">
-                        <li>
-                            <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-chabert/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://gitlab.com/users/jeremieSIMPLON6/projects" target="_blank">
-                                <i class="fab fa-gitlab"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/jchabert0/jchabert0.github.io" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="hero-btn">
-                        <a href="./img/CV_Jeremie_CHABERT.pdf" class="btn" target="_blank">Télécharger mon CV</a>
-                    </div>
-                </div>
-                <div class="hero-img col-lg-7">
-                    <img class="img-fluid" src="img/macbook.png" alt="">
-                </div>
-            </div>
+  </section>
+
+  <section id="header">
+
+    <div class="columns is-centered">
+      <div class="column has-text-left">
+        <div class="scrolljs-left-1">
+          <v-span type="header-text-top" title="new"></v-span>
+          <v-span type="header-text-color-top" title="Design"></v-span>
         </div>
-    </section>
-
-    <section class="about">
-        <div class="container">
-            <div class="row  d-flex align-items-center">
-                <div class="col-md-3 col-sm-12 img-resume">
-                    <img class="rounded-circle" src="img/photo_CV.jpg" alt="">
-                </div>
-                <div class="col-md-9 col-sm-12 about-resume">
-                    <p>Après sept ans dans le prêt-à-porter, j'ai eu envie de découvrir un métier plus cérébral. L'idée de cette
-                        reconversion professionnelle est de retrouver l'esprit cartésien de mes études tout en gardant l'esprit
-                        d'équipe de mes années en poste. Alors, pourquoi pas le développement web ?</p>
-                </div>
-
-            </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <div class="scrolljs-left-2">
+          <v-span type="header-text-middle" title="new"></v-span>
+          <v-span type="header-text-color-middle" title="Framework"></v-span>
         </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column has-text-right">
+        <div class="scrolljs-left-3">
+          <v-span type="header-text-end" title="new"></v-span>
+          <v-span type="header-text-color-end" title="Vue ( )"></v-span>
         </div>
-        <div id="toSkills"></div>
-    </section>
+      </div>
+    </div>
 
-
-    <section class="skills" id="skills">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-4 col-sm-8 card-box">
-                    <div class="card">
-                        <div class="card-img-top">
-                            <img src="img/langage.svg" alt="" class="mx-auto">
-                        </div>
-
-                        <div class="card-body d-flex justify-content-center">
-                            <div class="card-text">
-                                <h3>Langages</h3>
-                                <ul>
-                                    <li>HTML 5</li>
-                                    <li>CSS 3</li>
-                                    <li>SCSS</li>
-                                    <li>Javascript 6</li>
-                                    <li>Php 7</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-8 card-box">
-                    <div class="card">
-                        <div class="card-img-top">
-                            <img src="img/framework.svg" alt="" class="mx-auto">
-                        </div>
-                        <div class="card-body d-flex justify-content-center">
-                            <div class="card-text">
-                                <h3>Frameworks</h3>
-                                <ul>
-                                    <li>Angular 7</li>
-                                    <li>Symfony 4</li>
-                                    <li>Vue.js</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-8 card-box">
-                    <div class="card">
-                        <div class="card-img-top">
-                            <img src="img/other.svg" alt="" class="mx-auto">
-                        </div>
-                        <div class="card-body d-flex justify-content-center">
-                            <div class="card-text">
-                                <h3>Autres</h3>
-                                <ul>
-                                    <li>Git</li>
-                                    <li>Agile</li>
-                                    <li>Docker</li>
-                                    <li>Bootstrap</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="columns">
+      <div class="column has-text-left">
+        <div class="scrolljs-left-2">
+          <v-btn title="version deja Vue" url="./assets/projets/jchabert0.github.io/index.html" type="header-btn">
+          </v-btn>
         </div>
+      </div>
+    </div>
 
-    </section>
+  </section>
 
-    <section class="citation">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="citation-text" id="toProjects">
-                    <h4>
-                        <span>" </span>IN MEDIO STAT VIRTUS
-                        <span> "</span>
-                        <figcaption>- la vertu est dans le juste milieu -</figcaption>
-                    </h4>
-                    <h5 class="text-center">Aristote</h5>
-                </div>
+  <section id="main">
 
+    <section class="hero main-hero">
+      <div class="hero-body">
+        <div class="columns is-centered is-vcentered">
+          <div class="column">
+            <div class="scrolljs-bottom-1">
+              <h1 class="title">
+                {{name}}
+              </h1>
+              <h2 class="subtitle">
+                {{job}}
+              </h2>
+              <v-icon type="main-icon" url="https://www.linkedin.com/in/jeremie-chabert/" icon="fab fa-linkedin">
+              </v-icon>
+              <v-icon type="main-icon" url="https://gitlab.com/users/jeremieSIMPLON6/projects" icon="fab fa-gitlab">
+              </v-icon>
+              <v-icon type="main-icon" url="https://github.com/jchabert0/jchabert0.github.io" icon="fab fa-github">
+              </v-icon>
             </div>
-    </section>
+          </div>
 
-    <section class="projects" id="projects">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-4 col-sm-8 mb-4">
-                    <a href="./projects/cv/portfolio.html" target="_blank">
-                        <div class="card h-100">
-                            <img src="" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <div class="card-text">
-                                    <h3>CV interactif</h3>
-                                    <p>Version interactive de mon CV en HTML, CSS et Javascript.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-8 mb-4">
-                    <a href="https://www.simplonlyon.fr/promo6/jchabert/pokemon_battle/src/" target="_blank">
-                        <div class="card h-100">
-                            <img src="" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <div class="card-text">
-                                    <h3>Combat Pokémon</h3>
-                                    <p>Orienté objet, ce projet est ma première approche du Javascript.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-8 mb-4">
-                    <a href="./projects/stats/stats.html" target="_blank">
-                        <div class="card h-100">
-                            <img src="" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <div class="card-text">
-                                    <h3>Statistiques</h3>
-                                    <p>Représentation de statistiques par différents graphiques en ApexChart.js</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-8 mb-4">
-                    <a href="./projects/sortable/sortable.html" target="_blank">
-                        <div class="card h-100">
-                            <img src="" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <div class="card-text">
-                                    <h3>Drag & drop</h3>
-                                    <p>Avec la librairie Sortable.js, mise en place d'un drag & drop.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-8 mb-4">
-                    <a href="./projects/date/form.html" target="_blank">
-                        <div class="card h-100">
-                            <img src="" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <div class="card-text">
-                                    <h3>Formulaire date</h3>
-                                    <p>Validation des champs pour l'enregistrement d'une date.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-8 mb-4">
-                    <a href="./projects/planning/planning.html" target="_blank">
-                        <div class="card h-100">
-                            <img src="" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <div class="card-text">
-                                    <h3>Planning</h3>
-                                    <p>En collaboration avec Nicolas,fondateur de Babily, sychronisation des réservations sur
-                                        un planning intéractif
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+          <div class="column">
+            <div class="scrolljs-bottom-1">
+              <v-btn title="Telecharger mon CV" url="./assets/pdf/CV_Jeremie_CHABERT.pdf" type="main-btn"></v-btn>
             </div>
+          </div>
+          <div class="column">
+            <div class="scrolljs-bottom-1">
+              <img v-bind:src="photo" class="main-photo">
+            </div>
+          </div>
         </div>
+      </div>
+      </div>
     </section>
+  </section>
+
+  <section id="skill">
+
+    <div class="container">
+      <div class="columns is-centered">
+        <div v-for="card in cards" v-bind:key="card.id">
+          <div class="column">
+            <div class="scrolljs-top-1">
+              <div class="card skill-card">
+                <div class="card-content skill-card-content">
+                  <ul>
+                    <li v-for="item in card.list">
+                      <p class="title skill-card-title">
+                        {{ item.text }}
+                      </p>
+                    </li>
+                  </ul>
+                  <p class="card-subtitle skill-card-subtitle">
+                    {{ card.title }}
+                  </p>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div v-for="link in links" v-bind:href="link.url" v-bind:class="link.class" target="_blank">
+            <div class="scrolljs-top-1">
+              <article class="message projects-message">
+                <div class="message-body projects-message-body">
+                  <p class="projects-message-body-title"><strong> {{link.title}} </strong></p>
+                  <p class="projects-message-body-text"> {{link.text}} </p>
+                  <v-btn title="GO" :href="link.url" type="projects-btn"></v-btn>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <div class="columns">
+          <div class="column">
+            <div class="scrolljs-bottom-1">
+              <v-span type="footer-text" title="Design & développement by"></v-span>
+              <v-span type="footer-name" title="Jeremie Chabert"></v-span>
+
+              <div class="footer-technos">
+                <v-icon type="nav-item footer-logo" url="https://vuejs.org/" icon="fab fa-vuejs"></v-icon>
+                <v-icon type="nav-item footer-logo" url="https://git-scm.com/" icon="fab fa-git"></v-icon>
+                <v-icon type="nav-item footer-logo" url="https://sass-lang.com/" icon="fab fab fa-sass"></v-icon>
+                <v-icon type="nav-item footer-logo" url="https://bulma.io/" title="bulma"></v-icon>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </section>
 
 
-    <p class="text-center mt-5">Design & développement Jeremie Chabert</p>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <script src="./js/script.js"></script>
-
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous">
-        </script>
-
-
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="./js/components/v-span.js"></script>
+  <script src="./js/components/v-btn.js"></script>
+  <script src="./js/components/v-icon.js"></script>
+  <script src="./js/components/v-link.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/lib/scroll.js"></script>
 </body>
 
 </html>
