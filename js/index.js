@@ -31,7 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 var navbar = new Vue({ el: '#navbar' })
 
-var header = new Vue({ el: '#header' })
+var header = new Vue({
+    el: '#header',
+    data: {
+        span: 'new',
+        spanColor1: 'Design',
+        spanColor2: 'Framework',
+        spanColor3: 'Vue ( )',
+    }
+})
 
 var main = new Vue({
     el: '#main',
