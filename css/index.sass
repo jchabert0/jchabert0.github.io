@@ -3,13 +3,22 @@ $black: #2d2d2d
 $black-secondary: #303030
 $black-third: #4f4f4f
 $white: #e2e2e2
-$blue: rgb(112,255,234)
-$yellow: rgb(245,255,101)
-$green: rgb(110,255,91)
 
-$background-icon: -webkit-gradient(linear, left top, left bottom, from($blue), to($green))
-$background-banner: linear-gradient(0.25turn, $blue 40%, $yellow, $green)
-$background-banner-mobile: linear-gradient(0.50turn, $blue 50%, $yellow, $green)
+$yellow: #f5ff65
+$green: #6eff5b
+$blue: #70ffea
+$red: #ff5b5b
+$orange: #ffa75b
+$purple: #a45bff
+$pink: #ff5bcb
+
+$color-primary: $blue
+$color-secondary: $green
+$color-third: $yellow
+
+$background-icon: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary))
+$background-banner: linear-gradient(0.25turn, $color-primary 40%, $color-third, $color-secondary)
+$background-banner-mobile: linear-gradient(0.50turn, $color-primary 50%, $color-third, $color-secondary)
 
 $transition: .2s ease-in-out
 
@@ -41,7 +50,7 @@ body
     padding: .75rem !important
     transition: $transition
     &:hover
-        color: $green !important
+        color: $color-secondary !important
         background-color: $black-secondary !important
 
 #header
@@ -63,20 +72,20 @@ body
     color: $white
     font-size: 30px
 .header-span-color-left
-    color: $blue
+    color: $color-primary
     font-size: 40px
     text-decoration-line: overline
-    text-decoration-color: $blue
+    text-decoration-color: $color-primary
 .header-span-color-center
-    color: $yellow
+    color: $color-third
     font-size: 40px
     text-decoration-line: overline
-    text-decoration-color: $yellow
+    text-decoration-color: $color-third
 .header-span-color-right
-    color: $green
+    color: $color-secondary
     font-size: 40px
     text-decoration-line: overline
-    text-decoration-color: $green
+    text-decoration-color: $color-secondary
 .header-btn
     transition: $transition
     margin-left: $header-span-margin-mobile / 2
@@ -84,8 +93,8 @@ body
     color: $white !important
     border-color: $white !important
     &:hover
-        border-color: $yellow !important
-        color: $yellow !important
+        border-color: $color-third !important
+        color: $color-third !important
         background-color: $black !important
 
 .main-hero
@@ -109,7 +118,7 @@ body
     color: $black
     transition: $transition
     &:hover
-        color: $yellow
+        color: $color-third
 
 
 #projects
@@ -118,7 +127,7 @@ body
     height: 100%
     background-color: $white !important
 .skill-message-header
-    color: $green !important
+    color: $color-secondary !important
     background-color: $black-third !important
 .skill-message-body
     background-color: $white !important
@@ -129,7 +138,7 @@ body
     height: 100%
     background-color: $white !important
 .projects-message-header
-    color: $blue !important
+    color: $color-primary !important
     background-color: $black-third !important
 .projects-message-body
     background-color: $white !important
@@ -139,8 +148,8 @@ body
     color: $black !important
     border-color: $black !important
     &:hover
-        border-color: $yellow !important
-        color: $yellow !important
+        border-color: $color-third !important
+        color: $color-third !important
         background-color: $white !important
 .footer
     background-color: $black-secondary !important
@@ -158,9 +167,9 @@ body
 .footer-logo
     font-size: 20px
     padding: 10px
-    color: $blue
+    color: $color-primary
     transition: $transition
     &:hover
-        color: $green
+        color: $color-secondary
 .footer-bulma
     font-size: initial
