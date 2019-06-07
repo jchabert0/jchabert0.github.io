@@ -9,9 +9,9 @@ $green: rgb(110,255,91)
 $background-icon: -webkit-gradient(linear, left top, left bottom, from($blue), to($green))
 $background-banner: linear-gradient(0.25turn, $blue 40%, $yellow, $green)
 $background-banner-mobile: linear-gradient(0.50turn, $blue 50%, $yellow, $green)
-$box: -1px 1px 2px 1px rgba(0, 0, 0, 0.7), -1px 2px 5px rgba(255, 255, 255, 0.6) inset
 $transition: .2s ease-in-out
-$header-margin: 20%
+$header-span-margin: 20%
+$header-span-margin-mobile: 10%
 $margin-section: 150px
 
 body
@@ -29,7 +29,7 @@ body
     background: $background-icon
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
-.nav-text
+.nav-link
     color: $white !important
     font-size: 15px
     padding: .75rem !important
@@ -40,39 +40,41 @@ body
 
 #header
     margin-top: $margin-section
-.header-text-top
-    margin-left: $header-margin
-    text-decoration-color: $blue
+.header-span-block-left
+    margin-left: $header-span-margin
+    @media (max-width: 426px)
+        text-align: right
+        margin-right: $header-span-margin-mobile
+.header-span-block-center
+    @media (max-width: 426px)
+        text-align: right
+        margin-right: $header-span-margin-mobile
+.header-span-block-right
+    margin-right: $header-span-margin
+    @media (max-width: 426px)
+        margin-right: $header-span-margin-mobile    
+.header-span
     color: $white
     font-size: 30px
-.header-text-middle
-    text-decoration-color: $yellow
-    color: $white
-    font-size: 30px
-.header-text-end
-    text-decoration-color: $green
-    color: $white
-    font-size: 30px
-.header-text-color-top
-    text-decoration-line: overline
-    font-size: 30px
+.header-span-color-left
     color: $blue
+    font-size: 40px
+    text-decoration-line: overline
     text-decoration-color: $blue
-.header-text-color-middle
-    text-decoration-line: overline
-    font-size: 30px
-    text-decoration-color: $yellow
+.header-span-color-center
     color: $yellow
-.header-text-color-end
-    margin-right: $header-margin
+    font-size: 40px
     text-decoration-line: overline
-    font-size: 30px
-    text-decoration-color: $green
+    text-decoration-color: $yellow
+.header-span-color-right
     color: $green
+    font-size: 40px
+    text-decoration-line: overline
+    text-decoration-color: $green
 .header-btn
     transition: $transition
-    margin-left: $margin-section / 2
-    margin-top: $margin-section / 2
+    margin-left: $header-span-margin-mobile / 2
+    margin-bottom: $header-span-margin-mobile /2 
     color: $white !important
     border-color: $white !important
     &:hover
@@ -80,8 +82,6 @@ body
         color: $yellow !important
         background-color: $black !important
 
-#main
-    margin-top: $margin-section / 2
 .main-hero
     background: $background-banner 
     @media (max-width: 1023px)

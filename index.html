@@ -37,10 +37,9 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <v-link type="navbar-item nav-text" url='#skill' title="Competences"></v-link>
-          <v-link type="navbar-item nav-text" url='#projects' title="Projets"></v-link>
-          <v-link type="navbar-item nav-text" url='#footer' title="Technologies"></v-link>
-
+          <v-link type="navbar-item nav-link" url='#skill' title="Competences"></v-link>
+          <v-link type="navbar-item nav-link" url='#projects' title="Projets"></v-link>
+          <v-link type="navbar-item nav-link" url='#footer' title="Technologies"></v-link>
         </div>
       </div>
       </div>
@@ -53,24 +52,30 @@
     <div class="columns is-centered">
       <div class="column has-text-left">
         <div class="scrolljs-left-1">
-          <v-span type="header-text-top" title="new"></v-span>
-          <v-span type="header-text-color-top" title="Design"></v-span>
+          <div class="header-span-block-left">
+            <span class="header-span">new</span>
+            <span class="header-span-color-left">Design</span>
+          </div>
         </div>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column has-text-centered">
         <div class="scrolljs-left-2">
-          <v-span type="header-text-middle" title="new"></v-span>
-          <v-span type="header-text-color-middle" title="Framework"></v-span>
+          <div class="header-span-block-center">
+            <span class="header-span">new</span>
+            <span class="header-span-color-center">Framework</span>
+          </div>
         </div>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column has-text-right">
         <div class="scrolljs-left-3">
-          <v-span type="header-text-end" title="new"></v-span>
-          <v-span type="header-text-color-end" title="Vue ( )"></v-span>
+          <div class="header-span-block-right">
+            <span class="header-span">new</span>
+            <span class="header-span-color-right">Vue ( )</span>
+          </div>
         </div>
       </div>
     </div>
@@ -200,6 +205,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="./js/components/v-span.js"></script>
+  <script src="./js/components/v-header-span.js"></script>
   <script src="./js/components/v-btn.js"></script>
   <script src="./js/components/v-icon.js"></script>
   <script src="./js/components/v-link.js"></script>
