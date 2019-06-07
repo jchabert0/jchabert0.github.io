@@ -1,2 +1,2 @@
-# VueJS
+# Jeremie CHABERT VueJS
 
