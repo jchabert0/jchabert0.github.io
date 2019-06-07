@@ -180,22 +180,22 @@
 
   <section id="footer">
     <footer class="footer">
-      <div class="content has-text-centered">
-        <div class="columns">
-          <div class="column">
-            <div class="scrolljs-bottom-1">
-              <v-span type="footer-text" title="Design & développement by"></v-span>
-              <v-span type="footer-name" title="Jeremie Chabert"></v-span>
-
-              <div class="footer-technos">
-                <v-icon type="nav-item footer-logo" url="https://vuejs.org/" icon="fab fa-vuejs"></v-icon>
-                <v-icon type="nav-item footer-logo" url="https://git-scm.com/" icon="fab fa-git"></v-icon>
-                <v-icon type="nav-item footer-logo" url="https://sass-lang.com/" icon="fab fab fa-sass"></v-icon>
-                <v-icon type="nav-item footer-logo" url="https://bulma.io/" title="bulma"></v-icon>
-              </div>
+      <div class="content">
+        <div class="columns is-centered">
+          <div class="scrolljs-bottom-1">
+            <div class="footer-text">
+              <p class="footer-span"> {{text}} </p>
+              <p class="footer-name"> {{dev}} </p>
+            </div>
+            <div class="column">
+            <div class="footer-technos">
+              <v-icon type="nav-item footer-logo" url="https://vuejs.org/" icon="fab fa-vuejs"></v-icon>
+              <v-icon type="nav-item footer-logo" url="https://git-scm.com/" icon="fab fa-git"></v-icon>
+              <v-icon type="nav-item footer-logo" url="https://sass-lang.com/" icon="fab fab fa-sass"></v-icon>
+              <v-icon type="nav-item footer-logo" url="https://bulma.io/" title="bulma"></v-icon>
             </div>
           </div>
-
+          </div>
         </div>
       </div>
     </footer>
@@ -204,7 +204,6 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script src="./js/components/v-span.js"></script>
   <script src="./js/components/v-header-span.js"></script>
   <script src="./js/components/v-btn.js"></script>
   <script src="./js/components/v-icon.js"></script>

@@ -91,4 +91,10 @@ var projects = new Vue({
 })
 
 
-var footer = new Vue({ el:'#footer' })
+var footer = new Vue({
+    el:'#footer',
+    data: {
+        text: 'Design & développement by',
+        dev :'Jeremie Chabert'
+    }
+ })

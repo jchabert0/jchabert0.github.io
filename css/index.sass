@@ -6,13 +6,17 @@ $white: #e2e2e2
 $blue: rgb(112,255,234)
 $yellow: rgb(245,255,101)
 $green: rgb(110,255,91)
+
 $background-icon: -webkit-gradient(linear, left top, left bottom, from($blue), to($green))
 $background-banner: linear-gradient(0.25turn, $blue 40%, $yellow, $green)
 $background-banner-mobile: linear-gradient(0.50turn, $blue 50%, $yellow, $green)
+
 $transition: .2s ease-in-out
+
 $header-span-margin: 20%
 $header-span-margin-mobile: 10%
-$margin-section: 150px
+
+$footer-margin: 10%
 
 body
     background-color: $black
@@ -38,8 +42,6 @@ body
         color: $green !important
         background-color: $black-secondary !important
 
-#header
-    margin-top: $margin-section
 .header-span-block-left
     margin-left: $header-span-margin
     @media (max-width: 426px)
@@ -105,8 +107,6 @@ body
     &:hover
         color: $yellow
 
-#skill
-    margin-top: $margin-section
 .skill-card
     border-top: 8px solid $green
     border-radius: 4px
@@ -125,8 +125,7 @@ body
 .skill-card-content
     background: #222
     color: white
-#projects
-    margin-top: $margin-section
+
 .projects-message
     margin: 1rem
     background-color: $white !important
@@ -148,18 +147,19 @@ body
         color: $blue !important
         background-color: $white !important
 
-#footer
-    margin-top: $margin-section
 .footer
     background-color: $black-secondary !important
 .footer-text
+    margin: $footer-margin 0 $footer-margin/2 0
+    font-size: large
+.footer-span
     color: $white !important
 .footer-name
     background: $background-icon
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
 .footer-technos
-    margin: 40px
+    margin: $footer-margin/2 0 $footer-margin 0
 .footer-logo
     font-size: 20px
     padding: 10px

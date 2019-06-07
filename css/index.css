@@ -35,10 +35,6 @@ body {
   background-color: #303030 !important;
 }
 
-#header {
-  margin-top: 150px;
-}
-
 .header-span-block-left {
   margin-left: 20%;
 }
@@ -156,10 +152,6 @@ body {
   color: #f5ff65;
 }
 
-#skill {
-  margin-top: 150px;
-}
-
 .skill-card {
   border-top: 8px solid #6eff5b;
   border-radius: 4px;
@@ -186,10 +178,6 @@ body {
 .skill-card-content {
   background: #222;
   color: white;
-}
-
-#projects {
-  margin-top: 150px;
 }
 
 .projects-message {
@@ -224,15 +212,16 @@ body {
   background-color: #e2e2e2 !important;
 }
 
-#footer {
-  margin-top: 150px;
-}
-
 .footer {
   background-color: #303030 !important;
 }
 
 .footer-text {
+  margin: 10% 0 5% 0;
+  font-size: large;
+}
+
+.footer-span {
   color: #e2e2e2 !important;
 }
 
@@ -243,7 +232,7 @@ body {
 }
 
 .footer-technos {
-  margin: 40px;
+  margin: 5% 0 10% 0;
 }
 
 .footer-logo {
