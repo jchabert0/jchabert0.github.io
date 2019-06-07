@@ -35,4 +35,3 @@ ScrollReveal().reveal('.scrolljs-top-1', {
     origin: "top",
     distance: "50px"
 });
-
