@@ -45,7 +45,7 @@ var main = new Vue({
 var skill = new Vue({
     el: '#skill',
     data: {
-        cards: [
+        messages: [
             {
                 id: 1, title: 'Langages',
                 list: [
@@ -72,29 +72,54 @@ var skill = new Vue({
                     { text: 'Docker' },
                     { text: 'Bootstrap' },
                 ]
-            }
-        ],
+            },
+        ]
     }
 })
 
 var projects = new Vue({
     el: '#projects',
     data: {
-        links: [
-            { url: './assets/projets/cv/portfolio.html', title: 'CV interactif', text: 'Version interactive de mon CV en HTML, CSS et Javascript.' },
-            { url: 'https://www.simplonlyon.fr/promo6/jchabert/pokemon_battle/src/', title: 'Combat Pokémon', text: 'Orienté objet, ce projet est ma première approche du Javascript.' },
-            { url: './assets/projets/stats/stats.html', title: 'Statistiques', text: 'Représentation de statistiques par différents graphiques en ApexChart.js.' },
-            { url: './assets/projets/sortable/sortable.html', title: 'Drag & drop', text: "Avec la librairie Sortable.js, mise en place d'un drag & drop." },
-            { url: './assets/projets/date/form.html', title: 'Formulaire date', text: "Validation des champs pour l'enregistrement d'une date." },
+        messages: [
+            {
+                id: 1,
+                title: 'Combat Pokémon',
+                body: 'Orienté objet, ce projet est ma première approche du Javascript.',
+                url: 'https://www.simplonlyon.fr/promo6/jchabert/pokemon_battle/src/',
+            },
+            {
+                id: 2,
+                title: 'CV interactif',
+                body: 'Version interactive de mon CV en HTML, CSS et Javascript.',
+                url: './assets/projets/cv/portfolio.html',
+            },
+            {
+                id: 3,
+                title: 'Statistiques',
+                body: 'Représentation de statistiques par différents graphiques en ApexChart.js.',
+                url: './assets/projets/stats/stats.html',
+            },
+            {
+                id: 4,
+                title: 'Drag & drop',
+                body: "Avec la librairie Sortable.js, mise en place d'un drag & drop.",
+                url: './assets/projets/sortable/sortable.html',
+            },
+            {
+                id: 5,
+                title: 'Formulaire date',
+                body: "Validation des champs pour l'enregistrement d'une date.",
+                url: './assets/projets/date/form.html',
+            }
         ]
     }
 })
 
 
 var footer = new Vue({
-    el:'#footer',
+    el: '#footer',
     data: {
         text: 'Design & développement by',
-        dev :'Jeremie Chabert'
+        dev: 'Jeremie Chabert'
     }
- })
+})

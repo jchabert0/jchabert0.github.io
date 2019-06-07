@@ -152,54 +152,44 @@ body {
   color: #f5ff65;
 }
 
-.skill-card {
-  border-top: 8px solid #6eff5b;
-  border-radius: 4px;
+#projects {
+  padding: 5%;
 }
 
-.skill-card {
-  margin: 1rem;
+.skill-message {
+  height: 100%;
   background-color: #e2e2e2 !important;
 }
 
-.skill-card-subtitle {
+.skill-message-header {
   color: #6eff5b !important;
-  background-color: #919191;
-  border-radius: 30px;
-  margin-top: 20px;
-  padding: 20px;
-  text-align: center;
+  background-color: #4f4f4f !important;
 }
 
-.skill-card-title {
-  padding: 10px 20px 10px 20px;
+.skill-message-body {
+  background-color: #e2e2e2 !important;
 }
 
-.skill-card-content {
-  background: #222;
-  color: white;
+#skill {
+  padding: 5%;
 }
 
 .projects-message {
-  margin: 1rem;
+  height: 100%;
   background-color: #e2e2e2 !important;
 }
 
+.projects-message-header {
+  color: #70ffea !important;
+  background-color: #4f4f4f !important;
+}
+
 .projects-message-body {
-  border-color: #70ffea !important;
-  border-width: 0 0 0 8px !important;
-}
-
-.projects-message-body-title {
-  padding: 10px 20px 10px 20px;
-}
-
-.projects-message-body-text {
-  padding: 20px;
+  background-color: #e2e2e2 !important;
 }
 
 .projects-btn {
-  margin: 10px 20px 10px 20px;
+  margin: 0 0 24px 24px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   color: #2d2d2d !important;
@@ -207,8 +197,8 @@ body {
 }
 
 .projects-btn:hover {
-  border-color: #70ffea !important;
-  color: #70ffea !important;
+  border-color: #f5ff65 !important;
+  color: #f5ff65 !important;
   background-color: #e2e2e2 !important;
 }
 

@@ -1,7 +1,7 @@
 
 $black: #2d2d2d
 $black-secondary: #303030
-$black-third: #919191
+$black-third: #4f4f4f
 $white: #e2e2e2
 $blue: rgb(112,255,234)
 $yellow: rgb(245,255,101)
@@ -15,6 +15,8 @@ $transition: .2s ease-in-out
 
 $header-span-margin: 20%
 $header-span-margin-mobile: 10%
+
+$message-margin: 10%
 
 $footer-margin: 10%
 
@@ -107,46 +109,37 @@ body
     &:hover
         color: $yellow
 
-.skill-card
-    border-top: 8px solid $green
-    border-radius: 4px
-.skill-card
-    margin: 1rem
-    background-color: $white !important
-.skill-card-subtitle
-    color: $green !important
-    background-color: $black-third
-    border-radius: 30px
-    margin-top: 20px
-    padding: 20px
-    text-align: center
-.skill-card-title
-    padding: 10px 20px 10px 20px
-.skill-card-content
-    background: #222
-    color: white
 
-.projects-message
-    margin: 1rem
+#projects
+    padding: 5%
+.skill-message
+    height: 100%
     background-color: $white !important
+.skill-message-header
+    color: $green !important
+    background-color: $black-third !important
+.skill-message-body
+    background-color: $white !important
+
+#skill
+    padding: 5%
+.projects-message
+    height: 100%
+    background-color: $white !important
+.projects-message-header
+    color: $blue !important
+    background-color: $black-third !important
 .projects-message-body
-    border-color: $blue !important
-    border-width: 0 0 0 8px !important
-    padding: 
-.projects-message-body-title
-    padding: 10px 20px 10px 20px
-.projects-message-body-text
-    padding: 20px
+    background-color: $white !important
 .projects-btn
-    margin: 10px 20px 10px 20px
+    margin: 0 0 24px 24px
     transition: $transition
     color: $black !important
     border-color: $black !important
     &:hover
-        border-color: $blue !important
-        color: $blue !important
+        border-color: $yellow !important
+        color: $yellow !important
         background-color: $white !important
-
 .footer
     background-color: $black-secondary !important
 .footer-text
