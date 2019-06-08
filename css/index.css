@@ -17,7 +17,7 @@ body {
 .nav-icon {
   font-size: 30px;
   padding: 10px !important;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffa75b), to(#a45bff));
+  background: -webkit-gradient(linear, left top, left bottom, from(#70ffea), to(#6eff5b));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #a45bff !important;
+  color: #6eff5b !important;
   background-color: #303030 !important;
 }
 
@@ -73,30 +73,30 @@ body {
 }
 
 .header-span-color-left {
-  color: #ffa75b;
+  color: #70ffea;
   font-size: 40px;
   -webkit-text-decoration-line: overline;
           text-decoration-line: overline;
-  -webkit-text-decoration-color: #ffa75b;
-          text-decoration-color: #ffa75b;
+  -webkit-text-decoration-color: #70ffea;
+          text-decoration-color: #70ffea;
 }
 
 .header-span-color-center {
-  color: #ff5bcb;
+  color: #f5ff65;
   font-size: 40px;
   -webkit-text-decoration-line: overline;
           text-decoration-line: overline;
-  -webkit-text-decoration-color: #ff5bcb;
-          text-decoration-color: #ff5bcb;
+  -webkit-text-decoration-color: #f5ff65;
+          text-decoration-color: #f5ff65;
 }
 
 .header-span-color-right {
-  color: #a45bff;
+  color: #6eff5b;
   font-size: 40px;
   -webkit-text-decoration-line: overline;
           text-decoration-line: overline;
-  -webkit-text-decoration-color: #a45bff;
-          text-decoration-color: #a45bff;
+  -webkit-text-decoration-color: #6eff5b;
+          text-decoration-color: #6eff5b;
 }
 
 .header-btn {
@@ -109,20 +109,20 @@ body {
 }
 
 .header-btn:hover {
-  border-color: #ff5bcb !important;
-  color: #ff5bcb !important;
+  border-color: #f5ff65 !important;
+  color: #f5ff65 !important;
   background-color: #2d2d2d !important;
 }
 
 .main-hero {
-  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #ffa75b), color-stop(#ff5bcb), to(#a45bff));
-  background: linear-gradient(0.25turn, #ffa75b 40%, #ff5bcb, #a45bff);
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #70ffea), color-stop(#f5ff65), to(#6eff5b));
+  background: linear-gradient(0.25turn, #70ffea 40%, #f5ff65, #6eff5b);
 }
 
 @media (max-width: 1023px) {
   .main-hero {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ffa75b), color-stop(#ff5bcb), to(#a45bff));
-    background: linear-gradient(0.5turn, #ffa75b 50%, #ff5bcb, #a45bff);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #70ffea), color-stop(#f5ff65), to(#6eff5b));
+    background: linear-gradient(0.5turn, #70ffea 50%, #f5ff65, #6eff5b);
   }
 }
 
@@ -153,7 +153,7 @@ body {
 }
 
 .main-icon:hover {
-  color: #ff5bcb;
+  color: #f5ff65;
 }
 
 #projects {
@@ -166,7 +166,7 @@ body {
 }
 
 .skill-message-header {
-  color: #a45bff !important;
+  color: #6eff5b !important;
   background-color: #4f4f4f !important;
 }
 
@@ -184,7 +184,7 @@ body {
 }
 
 .projects-message-header {
-  color: #ffa75b !important;
+  color: #70ffea !important;
   background-color: #4f4f4f !important;
 }
 
@@ -201,8 +201,8 @@ body {
 }
 
 .projects-btn:hover {
-  border-color: #ff5bcb !important;
-  color: #ff5bcb !important;
+  border-color: #f5ff65 !important;
+  color: #f5ff65 !important;
   background-color: #e2e2e2 !important;
 }
 
@@ -220,7 +220,7 @@ body {
 }
 
 .footer-name {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffa75b), to(#a45bff));
+  background: -webkit-gradient(linear, left top, left bottom, from(#70ffea), to(#6eff5b));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -232,13 +232,13 @@ body {
 .footer-logo {
   font-size: 20px;
   padding: 10px;
-  color: #ffa75b;
+  color: #70ffea;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
 .footer-logo:hover {
-  color: #a45bff;
+  color: #6eff5b;
 }
 
 .footer-bulma {
