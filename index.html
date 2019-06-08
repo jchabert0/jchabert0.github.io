@@ -131,7 +131,7 @@
 
   <section id="projects">
 
-    <div class="columns">
+    <div class="columns is-desktop is-centered">
       <div class="column" v-for="message in messages" :key="message.id" :title="message.title" :body="message.body">
         <article class="message projects-message scrolljs-top-1">
           <div class="message-header projects-message-header" :color="message.color">
@@ -140,7 +140,9 @@
           <div class="message-body projects-message-body">
             {{message.body}}
           </div>
-          <v-btn type="projects-btn" title="visiter" :url="message.url"></v-btn>
+          <div class="projects-btn-position">
+            <v-btn type="projects-btn" title="visiter" :url="message.url"></v-btn>
+          </div>
         </article>
       </div>
     </div>
