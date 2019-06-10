@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js initial template</title>
+    <!--Font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Font Awesome ( /!\ https necessary )-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <!-- ScrollReveal -->
+    <script src="./assets/lib/scrollreveal/scrollreveal.min.js"></script>
+    <!-- Bulma -->
+    <link rel="stylesheet" href="./assets/lib/bulma/bulma.min.css">
+</head>
+
+<body>
+    <section class="hero is-info is-fullheight is-bold" id="home">
+        <div class="columns is-centered">
+            <div class="column has-text-centered">
+                <div class="mobile-first">
+                    <i class="fas fa-mobile"></i><span class="content is-small">{{message}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-body">
+            <div class="container hero-container">
+                <div class="columns is-centered is-gapless is-multiline is-vcentered">
+                    <div class="column is-half has-text-centered">
+                        <div class="hero-name">
+                            <h1 class="title">
+                                {{title}}
+                            </h1>
+                            <h2 class="subtitle">
+                                {{subtitle}}
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="columns is-desktop is-centered">
+                        <div class="column is-half-tablet is-half-desktop has-text-centered">
+                            <v-btn-home url="#" title="Télécharger CV" style="color: #209cee" icon="far fa-file-pdf">
+                            </v-btn-home>
+                        </div>
+                        <div class="column is-half-tablet is-half-desktop has-text-centered">
+                            <v-btn-home url="#" title="Voir projets" style="color: white; background-color: transparent"
+                                icon="fas fa-list-ul"></v-btn-home>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="circles">
+            <v-circle-home
+                circle="height: 200px; width:200px; left: 10px; bottom: 65px; animation: bubble 4s ease-out 0s alternate infinite">
+            </v-circle-home>
+            <v-circle-home
+                circle="height: 100px; width: 100px; left: 200px; bottom: 230px; animation: bubble 5s ease-out 0s alternate infinite">
+            </v-circle-home>
+            <v-circle-home
+                circle="height: 50px; width: 50px; left: 170px; bottom: 290px; animation: bubble 3s ease-out 0s alternate infinite">
+            </v-circle-home>
+            <v-circle-home
+                circle="height: 50px; width: 50px; left: 250px; bottom: 150px; animation: bubble 4s ease-out 0s alternate infinite">
+            </v-circle-home>
+            <v-circle-home
+                circle="height: 50px; width: 50px; left: 50px; bottom: 480px; animation: bubble 3s ease-out 0s alternate infinite">
+            </v-circle-home>
+            <v-circle-home
+                circle="height: 70px; width: 70px; left: 240px; bottom: 0px; animation: bubble 5s ease-out 0s alternate infinite">
+            </v-circle-home>
+        </div>
+    </section>
+
+
+
+    <!-- Vue.js ( /!\ https necessary )-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./js/scrollreveal/scroll.js"></script>
+    <script src="js/components/v-btn-home.js"></script>
+    <script src="./js/components/v-circle-home.js"></script>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

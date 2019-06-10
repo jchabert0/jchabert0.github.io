@@ -1,0 +1,21 @@
+
+@keyframes bubble
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(1.4)
+
+$c-primary: #04a6d7 // blue light
+$c-secondary: #209cee //blue
+$c-third: #3287f5 //blue dark
+$c-pink: #EC6EAD
+
+body
+    font-family: 'Muli', sans-serif
+.mobile-first
+    padding: 1rem
+.hero-container
+    z-index: 1 // Bubble see
+.hero-name
+    @media (max-width: 1023px)
+        padding-bottom: 4rem
