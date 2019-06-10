@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jérémie CHABERT</title>
+    <!--Font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/skill/skill.css">
+    <!-- Font Awesome ( /!\ https necessary )-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <!-- ScrollReveal -->
+    <script src="./assets/lib/scrollreveal/scrollreveal.min.js"></script>
+    <!-- Bulma -->
+    <link rel="stylesheet" href="./assets/lib/bulma/bulma.min.css">
+</head>
+
+<body>
+
+    <section class="hero is-light is-fullheight is-fullwidth" id="skill">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title"> {{vBootstrap}} </p>
+                            <v-btn-site-tile title="Site Bootstrap" url="./assets/projets/site-v1/index.html">
+                            </v-btn-site-tile>
+                        </article>
+                        <article class=" tile is-child notification is-warning">
+                                <p class="title">{{vBulma}}</p>
+                                <v-btn-site-tile title="Site Bulma" url="./projects.html"></v-btn-site-tile>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-info">
+                            <p class="title">{{firstName}}</p>
+                                <div class="photo"></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-danger">
+                        <p class="title">Wide tile</p>
+                        <p class="subtitle">Aligned with the right tile</p>
+                        <div class="content">
+                            <!-- Content -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">Tall tile</p>
+                        <p class="subtitle">With even more content</p>
+                        <div class="content">
+                            <!-- Content -->
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Vue.js ( /!\ https necessary )-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./js/scrollreveal/scrollSkill.js"></script>
+    <script src="./js/components/v-btn-site-tile.js"></script>
+    <script src="./js/skill.js"></script>
+</body>
+
+</html>
