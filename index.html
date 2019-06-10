@@ -19,61 +19,65 @@
 </head>
 
 <body>
-    <section class="hero is-info is-fullheight is-fullwidth is-bold" id="home">
-        <div class="hero-body">
-            <div class="container hero-container">
-                <div class="columns is-centered is-gapless is-multiline is-vcentered">
-                    <div class="column is-half has-text-centered">
-                        <div class="hero-name">
-                            <h1 class="title">
-                                {{title}}
-                            </h1>
-                            <h2 class="subtitle">
-                                {{subtitle}}
-                            </h2>
+    <section id="vue">
+        <section class="hero is-info is-fullheight is-fullwidth is-bold" v-show="home" id="home">
+            <div class="hero-body">
+                <div class="container hero-container">
+                    <div class="columns is-centered is-gapless is-multiline is-vcentered">
+                        <div class="column is-half has-text-centered">
+                            <div class="hero-name">
+                                <h1 class="title">
+                                    {{title}}
+                                </h1>
+                                <h2 class="subtitle">
+                                    {{subtitle}}
+                                </h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="columns is-tablet is-centered">
-                        <div class="column is-half-tablet is-half-desktop has-text-centered">
-                            <v-btn-home url="./assets/pdf/CV_Jeremie_CHABERT.pdf" title="Télécharger CV"
-                                style="color: #209cee" icon="far fa-file-pdf" target="_blank">
-                            </v-btn-home>
-                        </div>
-                        <div class="column is-half-tablet is-half-desktop has-text-centered">
-                            <v-btn-home url="./projects.html" title="Voir projets"
-                                style="color: #f5f5f5; background-color: transparent" icon="fas fa-list-ul">
-                            </v-btn-home>
+                        <div class="columns is-tablet is-centered">
+                            <div class="column is-half-tablet is-half-desktop has-text-centered">
+                                <v-btn-home url="./assets/pdf/CV_Jeremie_CHABERT.pdf" title="Télécharger CV"
+                                    style="color: #209cee" icon="far fa-file-pdf" target="_blank">
+                                </v-btn-home>
+                            </div>
+                            <div class="column is-half-tablet is-half-desktop has-text-centered">
+                                <v-btn-home title="Voir projets" @click.native="toShow()"
+                                    style="color: #f5f5f5; background-color: transparent" icon="fas fa-list-ul">
+                                </v-btn-home>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="circles">
-            <v-circle-home
-                circle="height: 200px; width:200px; left: 10px; bottom: 65px; animation: bubble 4s ease-out 0s alternate infinite">
-            </v-circle-home>
-            <v-circle-home
-                circle="height: 100px; width: 100px; left: 200px; bottom: 230px; animation: bubble 5s ease-out 0s alternate infinite">
-            </v-circle-home>
-            <v-circle-home
-                circle="height: 50px; width: 50px; left: 170px; bottom: 290px; animation: bubble 3s ease-out 0s alternate infinite">
-            </v-circle-home>
-            <v-circle-home
-                circle="height: 50px; width: 50px; left: 250px; bottom: 150px; animation: bubble 4s ease-out 0s alternate infinite">
-            </v-circle-home>
-            <v-circle-home
-                circle="height: 50px; width: 50px; left: 50px; bottom: 480px; animation: bubble 3s ease-out 0s alternate infinite">
-            </v-circle-home>
-            <v-circle-home
-                circle="height: 20px; width: 20px; left: 100px; bottom: 400px; animation: bubble 5s ease-out 0s alternate infinite">
-            </v-circle-home>
-            <v-circle-home
-                circle="height: 30px; width: 30px; left: 280px; bottom: 440px; animation: bubble 2s ease-out 0s alternate infinite">
-            </v-circle-home>
-        </div>
+            <div class="circles">
+                <v-circle-home
+                    circle="height: 200px; width:200px; left: 10px; bottom: 65px; animation: bubble 4s ease-out 0s alternate infinite">
+                </v-circle-home>
+                <v-circle-home
+                    circle="height: 100px; width: 100px; left: 200px; bottom: 230px; animation: bubble 5s ease-out 0s alternate infinite">
+                </v-circle-home>
+                <v-circle-home
+                    circle="height: 50px; width: 50px; left: 170px; bottom: 290px; animation: bubble 3s ease-out 0s alternate infinite">
+                </v-circle-home>
+                <v-circle-home
+                    circle="height: 50px; width: 50px; left: 250px; bottom: 150px; animation: bubble 4s ease-out 0s alternate infinite">
+                </v-circle-home>
+                <v-circle-home
+                    circle="height: 50px; width: 50px; left: 50px; bottom: 480px; animation: bubble 3s ease-out 0s alternate infinite">
+                </v-circle-home>
+                <v-circle-home
+                    circle="height: 20px; width: 20px; left: 100px; bottom: 400px; animation: bubble 5s ease-out 0s alternate infinite">
+                </v-circle-home>
+                <v-circle-home
+                    circle="height: 30px; width: 30px; left: 280px; bottom: 440px; animation: bubble 2s ease-out 0s alternate infinite">
+                </v-circle-home>
+            </div>
+        </section>
+
+        <section v-show="skill" id="skill">
+            <p>skill</p>
+        </section>
     </section>
-
-
 
     <!-- Vue.js ( /!\ https necessary )-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
