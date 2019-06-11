@@ -5,8 +5,8 @@ Vue.component('v-circle-home', {
         style="border-radius: 100%; \
         animation: scale ease-out 0s alternate infinite; \
         position: absolute; \
-        background-color: #3287f5; \
-        opacity: .5" \
+        background-color: #9ec8ff; \
+        opacity: .2" \
         :style="circle"> \
     </div>'
 })
