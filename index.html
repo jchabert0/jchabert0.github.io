@@ -67,24 +67,23 @@
         </div>
     </section>
 
-    <section class="hero is-light is-bold is-fullheight is-fullwidth" id="skill">
+    <section class="hero is-light is-bold is-fullwidth" id="skill">
 
-        <div class="columns">
-            <div class="column is-8">
+
+        <div class="columns is-vcentered" v-for="item in items">
+            <div :class="item.column">
                 <a href="#" class="hero is-dark">
-                    <div class="column">
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.
-                        </div>
+                    <div class="content">
+                        <p class="title is-4"> {{ item.title }} </p>
+                        <p class="subtitle is-6"> {{ item.message }} </p>
                     </div>
+                </a>
             </div>
-            </a>
             <div class="column">
                 <div class="hero is-dark">non</div>
             </div>
+            
         </div>
-
 
 
     </section>
@@ -100,13 +99,17 @@
             el: '#home',
             data: {
                 title: 'Jérémie CHABERT',
-                subtitle: 'Développeur front-end'
+                subtitle: 'Développeur front-end',
+                col:'column is-8'
             }
         })
         var skill = new Vue({
             el: '#skill',
             data: {
-
+                items: [
+                    { column: 'column is-8', title: 'hello', message: 'Foo' },
+                    { column: 'column is-4', title: 'bye', message: 'Bar' }
+                ]
             }
         })
 
