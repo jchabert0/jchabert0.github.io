@@ -1,0 +1,155 @@
+/* Les font-family */
+h1 {
+  font-family: sans-serif;
+}
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3, h4, h5, h6 {
+  font-family: inherit;  
+}
+p{
+  font-family: sans-serif;
+}
+
+/* Le DOM */
+.header {
+  height: 17rem;
+  background: linear-gradient(45deg, rgba(0, 0, 0, .1), white);
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+}
+
+#home {
+  font-size: 3rem;
+}
+
+.main {
+  background-color: white;
+  color: black;
+}
+
+/* Les cards boostrap */
+.card {
+  background-color: rgba(0, 123, 255, 0.3);
+  height: auto;  
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 2px black;
+ 
+}
+.btn {
+  background-color: black;
+  color: white;
+}
+.btn:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 0 .2rem rgba(0,0,0, 1);  
+}
+
+#btnToTop {
+  opacity: 0.8;
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30%;
+  font-size: 18px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  margin: auto;
+  list-style: none;
+  padding: initial;
+}
+
+/* Les règles */
+.centerCSS {
+  text-align: center;
+}
+.margin1rem{
+  margin: 1rem;
+}
+.marginAuto {
+  margin: auto;
+}
+.underlineCSS {
+  text-decoration: underline;  
+}
+.listNoCSS{
+  list-style: none;
+  padding: inherit;
+  text-align: center;
+}
+.listCSS {
+  list-style: none;
+  padding: inherit;
+}
+.listCSS>li::before {
+  content: "• ";
+  color: #007bff;
+}
+input {
+  width: 5%;
+}
+.colorBlue {
+color: #007bff;
+}
+.bgColorBlue {
+  background-color: rgba(0, 123, 255, 0.8);
+}
+
+.navbarList {
+  font-family: monospace;
+  list-style: none;
+  padding: initial;
+}
+.toClickNavbar {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: larger;
+  line-height: 2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.toClickNavbar:hover, .toClickContact:hover{
+  color: white;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
+.toClickContact{
+  color: white;
+  cursor: pointer;
+  display: grid;
+  font-size: medium;
+  font-family: monospace;
+}
+.listContact>li {
+  padding: 1rem;
+  border: solid 1px white;
+}
+.iconContact{
+  font-size: xx-large;  
+}
+
+
+/* Autres */
+
+.photo {
+  background-image: url("./files/photo_CV.jpg");
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
