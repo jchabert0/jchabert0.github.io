@@ -67,22 +67,27 @@
         </div>
     </section>
 
-    <section class="hero is-light is-bold is-fullwidth" id="skill">
+    <section class="hero is-light is-bold is-fullheight is-fullwidth" id="skill">
 
 
         <div class="columns is-vcentered" v-for="item in items">
             <div :class="item.column">
                 <a href="#" class="hero is-dark">
                     <div class="content">
-                        <p class="title is-4"> {{ item.title }} </p>
-                        <p class="subtitle is-6"> {{ item.message }} </p>
+                        <div class="column">
+                            <p class="title is-4"> {{ item.title }} </p>
+                        </div>
+
+                        <div class="column">
+                            <p class="subtitle is-6"> {{ item.message }} </p>
+                        </div>
                     </div>
                 </a>
             </div>
             <div class="column">
-                <div class="hero is-dark">non</div>
+                <div class="hero is-info" style="height: 50px"></div>
             </div>
-            
+
         </div>
 
 
@@ -100,15 +105,17 @@
             data: {
                 title: 'Jérémie CHABERT',
                 subtitle: 'Développeur front-end',
-                col:'column is-8'
             }
         })
         var skill = new Vue({
             el: '#skill',
             data: {
                 items: [
-                    { column: 'column is-8', title: 'hello', message: 'Foo' },
-                    { column: 'column is-4', title: 'bye', message: 'Bar' }
+                    { column: 'column is-10', title: 'Combat Pokémon', message: 'Orienté objet, ce projet est ma première approche du Javascript.' },
+                    { column: 'column is-9', title: 'Statistiques', message: 'Représentation de statistiques par différents graphiques en ApexChart.js' },
+                    { column: 'column is-8', title: 'Drag & drop', message: "Avec la librairie Sortable.js, mise en place d'un drag & drop." },
+                    { column: 'column is-7', title: 'Formulaire date', message: "Validation des champs pour l'enregistrement d'une date." },
+                    { column: 'column is-6', title: 'Planning', message: "En collaboration avec Nicolas,fondateur de Babily, sychronisation des réservations sur un planning intéractif" },
                 ]
             }
         })
