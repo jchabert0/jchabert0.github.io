@@ -1,17 +1,3 @@
-@-webkit-keyframes translate {
-  100% {
-    -webkit-transform: translate(100px, 100px);
-            transform: translate(100px, 100px);
-  }
-}
-
-@keyframes translate {
-  100% {
-    -webkit-transform: translate(100px, 100px);
-            transform: translate(100px, 100px);
-  }
-}
-
 @-webkit-keyframes scale {
   100% {
     -webkit-transform: scale(1.4);

@@ -20,6 +20,7 @@
 
 <body>
     <section class="hero is-info is-fullheight is-fullwidth is-bold" id="home">
+        <span style="text-align: center"> {{message}} </span>
         <div class="hero-body">
             <div class="container hero-container">
                 <div class="columns is-centered is-gapless is-multiline is-vcentered">
@@ -40,8 +41,8 @@
                             </v-btn>
                         </div>
                         <div class="column is-half-tablet is-half-desktop has-text-centered">
-                            <v-btn url="#" title="Mes projets"
-                                style="color: #f5f5f5; background-color: transparent" icon="fas fa-list-ul">
+                            <v-btn url="#skill" title="Mes projets" style="color: #f5f5f5; background-color: transparent"
+                                icon="fas fa-list-ul">
                             </v-btn>
                         </div>
                     </div>
@@ -64,9 +65,11 @@
 
     <script>
         var time = (Math.floor(Math.random() * 6) + 1); // number beetween 2 & 6
+        // ☰
         var home = new Vue({
             el: '#home',
             data: {
+                message: 'work in progress',
                 title: 'Jérémie CHABERT',
                 subtitle: 'Développeur front-end',
                 circles: [
