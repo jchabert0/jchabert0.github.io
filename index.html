@@ -47,7 +47,11 @@
                     </div>
                 </div>
             </div>
-            <div class="circles">
+            <div class="circles" v-for="circle in circles">
+                    <div style="border-radius: 100%; animation: scale ease-out 0s alternate infinite;
+                    position: absolute; background-color: #3287f5; opacity: .5;">
+                </div>
+                <!--
                 <v-circle-home circle="height: 200px; width:200px; left: 10px; bottom: 65px; animation-duration: 5s;">
                 </v-circle-home>
                 <v-circle-home
@@ -63,13 +67,16 @@
                 </v-circle-home>
                 <v-circle-home circle="height: 30px; width: 30px; left: 280px; bottom: 440px; animation-duration: 3s;">
                 </v-circle-home>
+                -->
             </div>
         </div>
 
     </section>
 
-    <!-- Vue.js ( /!\ https necessary )-->
+    <!-- Vue.js dévelopment ( /!\ https necessary )-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!--Vue.js production ( /!\ https necessary )-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
     <script src="./components/v-circle-home.js"></script>
     <script src="./components/v-btn-home.js"></script>
 
@@ -79,7 +86,10 @@
             el: '#home',
             data: {
                 title: 'Jérémie CHABERT',
-                subtitle: 'Développeur front-end'
+                subtitle: 'Développeur front-end',
+                circles: [
+                    {height: '200px', width:'200px', left: '10px', bottom: '65px', animation: '5s'}
+                ]
             }
         })
 
