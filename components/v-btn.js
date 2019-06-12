@@ -1,4 +1,4 @@
-Vue.component('v-btn-home', {
+Vue.component('v-btn', {
     props: ['title', 'url', 'style', 'icon'],
     template: '<a class="button is-outlined is-rounded" style="width: 200px" \
                     :style="style" \
