@@ -48,10 +48,12 @@
                 </div>
             </div>
             <div class="circles" v-for="circle in circles">
-                    <div style="border-radius: 100%; animation: scale ease-out 0s alternate infinite;
-                    position: absolute; background-color: #3287f5; opacity: .5;">
+                <div style="border-radius: 100%; animation: scale ease-out 0s alternate infinite;
+                    position: absolute; background-color: #3287f5; opacity: .5;"
+                    :style="circle.size; circle.position; circle.duration">
                 </div>
                 <!--
+
                 <v-circle-home circle="height: 200px; width:200px; left: 10px; bottom: 65px; animation-duration: 5s;">
                 </v-circle-home>
                 <v-circle-home
@@ -88,7 +90,7 @@
                 title: 'Jérémie CHABERT',
                 subtitle: 'Développeur front-end',
                 circles: [
-                    {height: '200px', width:'200px', left: '10px', bottom: '65px', animation: '5s'}
+                    { size: 'height: 200px; width: 200px', position: 'left: 10px; bottom: 65px', duration: 'animation-animation: 5s;' }
                 ]
             }
         })
