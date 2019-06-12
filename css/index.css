@@ -1,14 +1,14 @@
 @-webkit-keyframes translate {
   100% {
-    -webkit-transform: translate(100px, 100px);
-            transform: translate(100px, 100px);
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
   }
 }
 
 @keyframes translate {
   100% {
-    -webkit-transform: translate(100px, 100px);
-            transform: translate(100px, 100px);
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
   }
 }
 
