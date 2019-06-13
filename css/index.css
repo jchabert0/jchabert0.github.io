@@ -39,4 +39,10 @@ body {
     padding-bottom: 4rem;
   }
 }
+
+@media (max-width: 768px) {
+  .col-translate {
+    height: 60px !important;
+  }
+}
 /*# sourceMappingURL=index.css.map */
