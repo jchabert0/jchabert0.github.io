@@ -1,14 +1,14 @@
 @-webkit-keyframes translate {
   100% {
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
   }
 }
 
 @keyframes translate {
   100% {
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
   }
 }
 
@@ -37,12 +37,6 @@ body {
 @media (max-width: 1023px) {
   .hero-name {
     padding-bottom: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .col-translate {
-    height: 60px !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
