@@ -25,18 +25,17 @@
         <div class="columns" v-for="(item, index) in items">
             <div :class="item.column">
                 <article class="message is-primary" style="margin: 1rem;">
-                    <div class="message-body" style=" border-width: 0px">
+                    <div class="message-body" style=" border-width: 0px;">
                         <h1 class="title"> {{ item.title }} </h1>
-                        <h3 class="subtitle is-6 alert" v-if="index === 2">
+                        <h3 class="subtitle is-6" v-if="index === 2">
                             <span class="icon has-text-primary"> <i class="fas fa-exclamation-triangle"></i> </span>
                             <span> {{alert}} </span>
                         </h3>
                         <h2 class="subtitle is-6"> {{ item.message }} </h2>
-                        <v-btn-skill :url="item.url" title="visiter" class="is-primary"
-                            style="background-color: transparent;">
+                        <v-btn-skill :url="item.url" title="visiter" class="is-primary">
                         </v-btn-skill>
                     </div>
-                    <div style="height: 5px; background-color: hsl(171, 100%, 41%); border-radius: 50%; animation: translate ease-out 0s alternate infinite"
+                    <div style="height: 5px; background-color: hsl(171, 100%, 41%); border-radius: 30px; animation: translate ease-out 0s alternate infinite"
                         :style="item.animation"></div>
             </div>
             </article>
