@@ -113,9 +113,9 @@
                 </div>
             </div>
         </div>
-        <div class="square">
-            <div style="height: 100px; width: 100px; background-color: hsl(328,100%,54%); opacity: .5; position: absolute;
-            left: 100px; top: 50px;">
+        <div class="square" v-for="square in squares">
+            <div style="height: 100px; width: 100px; border: solid 2px rgb(255, 101, 183); opacity: .5; position: absolute; animation: scale ease-out 0s alternate infinite;"
+                :style="square.style">
             </div>
         </div>
     </section>
