@@ -19,20 +19,18 @@
 </head>
 
 <body>
-    <section class="hero is-info is-fullheight is-fullwidth is-bold" style="position: relative;" id="home">
+    <section class="hero is-info is-fullheight is-bold" style="position: relative;" id="home">
         <span style="text-align: center"> {{message}} </span>
         <div class="hero-body">
             <div class="container hero-container">
                 <div class="columns is-centered is-gapless is-multiline is-vcentered">
-                    <div class="column is-half has-text-centered">
-                        <div class="hero-name">
+                    <div class="column is-half has-text-centered" style="margin-bottom: 2rem;">
                             <h1 class="title">
                                 {{title}}
                             </h1>
                             <h2 class="subtitle">
                                 {{subtitle}}
                             </h2>
-                        </div>
                     </div>
                     <div class="columns is-tablet is-centered">
                         <div class="column is-half-tablet is-half-desktop has-text-centered">
@@ -56,7 +54,7 @@
         </div>
     </section>
 
-    <section class="hero is-primary is-bold is-fullheight is-fullwidth" id="skill">
+    <section class="hero is-primary is-bold is-fullheight" id="skill">
         <div class="columns" v-for="(projet, index) in projets">
             <div :class="projet.column">
                 <div class="column">
@@ -89,24 +87,29 @@
 
 
 
-    <section class="hero is-dark is-fullheight is-fullwidth" style="position: relative;" id="contact">
+    <section class="hero is-dark is-fullheight" style="position: relative;" id="contact">
         <div class="hero-body">
             <div class="container hero-container">
-                <div class="columns is-gapless is-multiline is-mobile">
-                    <div class="column has-text-centered">
+                <div class="columns is-gapless is-multiline is-tablet">
+                    <div class="column is-half has-text-centered" style="margin-bottom: 2rem;">
                         <div class="column">
-                            <div class="hero-name contact is-light">
-                                <h1 class="title">
-                                    {{title}}
-                                </h1>
-                            </div>
+                            <h1 class="title">
+                                {{followMe}}
+                            </h1>
                         </div>
                         <div class="column">
-                            <v-btn-contact url="https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-chabert/" icon="fab fa-linkedin">
-                            </v-btn-contact>
-                            <v-btn-contact url="https://gitlab.com/users/jeremieSIMPLON6/projects" icon="fab fa-gitlab">
-                            </v-btn-contact>
-                            <v-btn-contact url="https://github.com/jchabert0/jchabert0.github.io" icon="fab fa-github">
+                            <v-btn-follow v-for="follow in follows" :url="follow.url" :icon="follow.icon">
+                            </v-btn-follow>
+                        </div>
+                    </div>
+                    <div class="column is-half has-text-centered">
+                        <div class="column">
+                            <h1 class="title">
+                                {{contactMe}}
+                            </h1>
+                        </div>
+                        <div class="column" v-for="contact in contacts">
+                            <v-btn-contact :title="contact.title" :icon="contact.icon">
                             </v-btn-contact>
                         </div>
                     </div>
@@ -126,6 +129,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>-->
     <script src="./components/v-btn-home.js"></script>
     <script src="./components/v-btn-skill.js"></script>
+    <script src="./components/v-btn-follow.js"></script>
     <script src="./components/v-btn-contact.js"></script>
     <script src="./js/home.js"></script>
     <script src="./js/skill.js"></script>
