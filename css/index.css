@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 @-webkit-keyframes translatePos {
   100% {
     -webkit-transform: translateX(10%);
@@ -28,7 +26,6 @@
   }
 }
 
->>>>>>> skill
 @-webkit-keyframes scale {
   100% {
     -webkit-transform: scale(1.4);
@@ -49,11 +46,5 @@ body {
 
 .hero-container {
   z-index: 1;
-}
-
-@media (max-width: 1023px) {
-  .hero-name {
-    padding-bottom: 4rem;
-  }
 }
 /*# sourceMappingURL=index.css.map */

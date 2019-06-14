@@ -19,20 +19,18 @@
 </head>
 
 <body>
-    <section class="hero is-info is-fullheight is-fullwidth is-bold" style="position: relative;" id="home">
+    <section class="hero is-info is-fullheight is-bold" style="position: relative;" id="home">
         <span style="text-align: center"> {{message}} </span>
         <div class="hero-body">
             <div class="container hero-container">
                 <div class="columns is-centered is-gapless is-multiline is-vcentered">
-                    <div class="column is-half has-text-centered">
-                        <div class="hero-name">
+                    <div class="column is-half has-text-centered" style="margin-bottom: 2rem;">
                             <h1 class="title">
                                 {{title}}
                             </h1>
                             <h2 class="subtitle">
                                 {{subtitle}}
                             </h2>
-                        </div>
                     </div>
                     <div class="columns is-tablet is-centered">
                         <div class="column is-half-tablet is-half-desktop has-text-centered">
@@ -56,46 +54,87 @@
         </div>
     </section>
 
-        <section class="hero is-primary is-bold is-fullheight  is-fullwidth" id="skill">
-            <div class="columns" v-for="(projet, index) in projets">
-                <div :class="projet.column">
-                    <div class="column">
-                        <div class="card" style="height: 100%; border-radius: 30px; padding: 1rem;">
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-content">
-                                        <p class="title is-4" style="color: hsl(171, 100%, 41%);">{{ projet.title }}</p>
-                                        <p class="subtitle is-6" style="color: hsl(171, 100%, 41%);" v-if="index === 2">
-                                            <span class="icon has-text-primary"> <i
-                                                    class="fas fa-exclamation-triangle"></i>
-                                            </span>
-                                            <span> {{alert}} </span>
-                                        </p>
-                                        <p class="subtitle is-6" style="color: hsl(171, 100%, 41%);">
-                                            {{ projet.message }}
-                                        </p>
-                                    </div>
+    <section class="hero is-primary is-bold is-fullheight" id="skill">
+        <div class="columns" v-for="(projet, index) in projets">
+            <div :class="projet.column">
+                <div class="column">
+                    <div class="card" style="height: 100%; border-radius: 30px; padding: 1rem;">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4" style="color: hsl(171, 100%, 41%);">{{ projet.title }}</p>
+                                    <p class="subtitle is-6" style="color: hsl(171, 100%, 41%);" v-if="index === 2">
+                                        <span class="icon has-text-primary"> <i class="fas fa-exclamation-triangle"></i>
+                                        </span>
+                                        <span> {{alert}} </span>
+                                    </p>
+                                    <p class="subtitle is-6" style="color: hsl(171, 100%, 41%);">
+                                        {{ projet.message }}
+                                    </p>
                                 </div>
-                                <div class="content">
-                                    <v-btn-skill :url="projet.url" title="visiter" class="is-primary">
-                                    </v-btn-skill>
-                                </div>
-                                <div style="height: 5px; background-color: hsl(171, 100%, 41%); border-radius: 30px; animation: ease-out 0s alternate infinite"
-                                    :style="projet.animation"></div>
                             </div>
+                            <div class="content">
+                                <v-btn-skill :url="projet.url" title="visiter" class="is-primary">
+                                </v-btn-skill>
+                            </div>
+                            <div style="height: 5px; background-color: hsl(171, 100%, 41%); border-radius: 30px; animation: ease-out 0s alternate infinite"
+                                :style="projet.animation"></div>
                         </div>
                     </div>
-        </section>
+                </div>
+    </section>
 
-        <!-- Vue.js dévelopment ( /!\ https necessary )-->
-        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <!--Vue.js production ( /!\ https necessary )
+
+
+
+    <section class="hero is-dark is-fullheight" style="position: relative;" id="contact">
+        <div class="hero-body">
+            <div class="container hero-container">
+                <div class="columns is-gapless is-multiline is-tablet">
+                    <div class="column is-half has-text-centered" style="margin-bottom: 2rem;">
+                        <div class="column">
+                            <h1 class="title">
+                                {{followMe}}
+                            </h1>
+                        </div>
+                        <div class="column">
+                            <v-btn-follow v-for="follow in follows" :url="follow.url" :icon="follow.icon">
+                            </v-btn-follow>
+                        </div>
+                    </div>
+                    <div class="column is-half has-text-centered">
+                        <div class="column">
+                            <h1 class="title">
+                                {{contactMe}}
+                            </h1>
+                        </div>
+                        <div class="column" v-for="contact in contacts">
+                            <v-btn-contact :title="contact.title" :icon="contact.icon">
+                            </v-btn-contact>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="square" v-for="square in squares">
+            <div style="border: solid 2px rgb(255, 101, 183); opacity: .5; position: absolute; animation: scale ease-out 0s alternate infinite;"
+                :style="square.style">
+            </div>
+        </div>
+    </section>
+
+    <!-- Vue.js dévelopment ( /!\ https necessary )-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!--Vue.js production ( /!\ https necessary )
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>-->
-        <script src="./components/v-btn-home.js"></script>
-        <script src="./components/v-btn-skill.js"></script>
-        <script src="./js/skill.js"></script>
+    <script src="./components/v-btn-home.js"></script>
+    <script src="./components/v-btn-skill.js"></script>
+    <script src="./components/v-btn-follow.js"></script>
+    <script src="./components/v-btn-contact.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/skill.js"></script>
+    <script src="./js/contact.js"></script>
 
-        <script src="./js/home.js"></script>
 </body>
 
 </html>
