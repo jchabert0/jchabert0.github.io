@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>drag & drop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./sortable.css" />
+</head>
+
+<body>
+
+    <!-- Left section -->
+
+    <!-- Le premier titre doit etre externalisé de la div draggable ... -->
+    <h1 id="title1" style="margin-left: 19%;">Adaptation</h1>
+    <!--  pour que l'on ne puisse pas drag and drop au dessus -->
+
+    <div id="draggableListLeft" style="width: 50%; float:left;">
+
+        <p id="card1 " data-idx="data1 " style=" padding: 10px; height:
+          50px; list-style: none; text-align: center">
+            <span class="handle" style="margin-top: 10px; cursor: pointer; font-size: 40px;">☰ </span>Enfant 1
+        </p>
+
+
+        <p id="card2 " data-idx="data2 " style="padding: 10px; height:
+          50px; list-style: none; text-align: center">
+            <span class="handle" style="margin-top: 10px; cursor: pointer; font-size: 40px;">☰ </span>Enfant 2
+        </p>
+
+
+        <h1 class="title" id="title2" style="text-align: center">Rencontre</h1>
+
+
+        <p class=" card " id="card4 " data-idx="data4 " style=" padding: 10px; height:
+            50px; list-style: none; text-align: center">
+            <span class="handle" style="margin-top: 10px; cursor: pointer; font-size: 40px;">☰ </span>Enfant 3
+        </p>
+
+        <p class="card " id="card6 " data-idx="data6 " style="padding: 10px; height:
+            50px; list-style: none; text-align: center">
+            <span class="handle" style="margin-top: 10px; cursor: pointer; font-size: 40px;">☰ </span>Enfant 4
+        </p>
+
+        <h1 class="title" id="title3" style="text-align: center">Préinscription</h1>
+
+
+        <p class="card " id="card8 " data-idx="data8 " style=" padding: 10px; height:
+              50px; list-style: none; text-align: center">
+            <span class="handle" style="margin-top: 10px; cursor: pointer; font-size: 40px;">☰ </span>Enfant 5
+        </p>
+        <p class="card " id="card9 " data-idx="data9 " style="padding: 10px; height:
+              50px; list-style: none; text-align: center">
+            <span class="handle" style="margin-top: 10px; cursor: pointer; font-size: 40px;">☰ </span>Enfant 6
+        </p>
+
+
+    </div>
+
+
+    <!-- Right Section -->
+
+
+    <!-- Le premier titre doit etre externalisé de la div draggable ... -->
+    <h1 id="title2" style="text-align: center">Rang 1</h1>
+    <!--  pour que l'on ne puisse pas drag and drop au dessus -->
+
+    <div id="draggableListRight" style="width: 50%; float:right;">
+
+
+        <p class=" card " id="card10 " data-idx="data10 " style=" padding: 10px; height:
+        50px; list-style: none; text-align: center">
+            <span class="handle" style="margin-top: 10px; cursor: pointer; font-size: 40px;">☰ </span>Enfant 7
+        </p>
+
+        <p class="card " id="card12 " data-idx="data12 " style="padding: 10px; height:
+        50px; list-style: none; text-align: center">
+            <span class="handle" style="margin-top: 10px; cursor: pointer; font-size: 40px;">☰ </span>Enfant 8
+        </p>
+
+
+        <h1 class="title" style="text-align: center">Rang 2</h1>
+
+        <p class=" card " id="card13 " data-idx="data13 " style="padding: 10px; height:
+        50px; list-style: none; text-align: center">
+            <span class="handle" style="margin-top: 10px; cursor: pointer; font-size: 40px;">☰ </span>Enfant 9
+        </p>
+        <p class="card " id="card14 " data-idx="data14 " style="padding: 10px; height:
+        50px; list-style: none; text-align: center">
+            <span class="handle" style="margin-top: 10px; cursor: pointer; font-size: 40px;">☰ </span>Enfant 10
+        </p>
+
+
+    </div>
+
+
+    <!--Ici le script de la librairie sortableJS utilisée pour les drag & drop-->
+    <script src="./script/sortable.min.js"></script>
+    <script src="./sortable.js"></script>
+
+</body>
+
+</html>
