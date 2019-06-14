@@ -35,7 +35,7 @@
                         <v-btn-skill :url="item.url" title="visiter" class="is-primary">
                         </v-btn-skill>
                     </div>
-                    <div style="height: 5px; background-color: hsl(171, 100%, 41%); border-radius: 30px; animation: translate ease-out 0s alternate infinite"
+                    <div style="height: 5px; background-color: hsl(171, 100%, 41%); border-radius: 30px; animation: ease-out 0s alternate infinite"
                         :style="item.animation"></div>
             </div>
             </article>
@@ -53,12 +53,42 @@
             data: {
                 alert: ' Non responsive / utiliser desktop ou landscape ',
                 items: [
-                    { column: 'column is-10', title: 'Mon site V1', url: './assets/projets/site-v1/index.html', message: "HTML / CSS / Bootstrap à partir d'une maquette.", animation: 'animation-duration: 6s' },
-                    { column: 'column is-8', title: 'Mon site V2', url: './assets/projets/site-v2/index.html', message: "HTML / SASS / VUE / BULMA from scratch. Je souhaitais une interface personelle ainsi q'une première approche de Vue.js et Bulma", animation: 'animation-duration: 4s' },
-                    { column: 'column is-8', title: 'Combat Pokémon', url: './assets/projets/pokemon_battle/src/index.html', message: "HTML/CSS/JS à mon école Simplon, il est mon tout premier projet.", animation: 'animation-duration: 7s' },
-                    { column: 'column is-7', title: 'Statistiques', url: './assets/projets/stats/stats.html', message: 'JavaScript/ApexchartJS, représentation de statistiques par différents graphiques', animation: 'animation-duration: 5s' },
-                    { column: 'column is-8', title: 'Drag & drop', url: './assets/projets/sortable/sortable.html', message: "JavaScript/Sortable.js, mise en place d'un drag & drop.", animation: 'animation-duration: 6s' },
-                    { column: 'column is-9', title: 'Formulaire date', url: './assets/projets/date/form.html', message: "JavaScript exclusivement, validation des champs pour l'enregistrement d'une date.", animation: 'animation-duration: 3s' },
+                    {
+                        column: 'column is-10', title: 'Mon site V1',
+                        url: './assets/projets/site-v1/index.html',
+                        message: "HTML / CSS / Bootstrap à partir d'une maquette.",
+                        animation: 'animation-name: translatePos; animation-duration: 6s'
+                    },
+                    {
+                        column: 'column is-8  is-offset-4', title: 'Mon site V2',
+                        url: './assets/projets/site-v2/index.html',
+                        message: "HTML / SASS / VUE / BULMA from scratch. Je souhaitais une interface personelle ainsi q'une première approche de Vue.js et Bulma",
+                        animation: 'animation-name: translateNeg; animation-duration: 4s'
+                    },
+                    {
+                        column: 'column is-8', title: 'Combat Pokémon',
+                        url: './assets/projets/pokemon_battle/src/index.html',
+                        message: "HTML/CSS/JS à mon école Simplon, il est mon tout premier projet.",
+                        animation: 'animation-name: translatePos; animation-duration: 7s'
+                    },
+                    {
+                        column: 'column is-7 is-offset-5', title: 'Statistiques',
+                        url: './assets/projets/stats/stats.html',
+                        message: 'JavaScript/ApexchartJS, représentation de statistiques par différents graphiques',
+                        animation: 'animation-name: translateNeg; animation-duration: 5s'
+                    },
+                    {
+                        column: 'column is-8', title: 'Drag & drop',
+                        url: './assets/projets/sortable/sortable.html',
+                        message: "JavaScript/Sortable.js, mise en place d'un drag & drop.",
+                        animation: 'animation-name: translatePos; animation-duration: 6s'
+                    },
+                    {
+                        column: 'column is-9  is-offset-3', title: 'Formulaire date',
+                        url: './assets/projets/date/form.html',
+                        message: "JavaScript exclusivement, validation des champs pour l'enregistrement d'une date.",
+                        animation: 'animation-name: translateNeg; animation-duration: 3s'
+                    },
                 ]
             }
         })
