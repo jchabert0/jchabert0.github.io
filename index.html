@@ -56,7 +56,7 @@
         </div>
     </section>
 
-    <section class="hero is-primary is-bold is-fullheight  is-fullwidth" id="skill">
+    <section class="hero is-primary is-bold is-fullheight is-fullwidth" id="skill">
         <div class="columns" v-for="(projet, index) in projets">
             <div :class="projet.column">
                 <div class="column">
@@ -86,13 +86,40 @@
                 </div>
     </section>
 
-    <section class="hero" id="contact">
-        <h1 class="title">
-            {{title}}
-        </h1>
-        <div class="icons">
-            <v-btn-contact></v-btn-contact>
+
+
+
+    <section class="hero is-dark is-fullheight is-fullwidth" id="contact">
+        <div class="hero-body">
+            <div class="container hero-container">
+                <div class="columns is-gapless is-multiline is-mobile">
+                    <div class="column has-text-centered">
+                        <div class="column">
+                            <div class="hero-name contact is-light">
+                                <h1 class="title">
+                                    {{title}}
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <v-btn-contact url="https://www.linkedin.com/in/jeremie-chabert/" icon="fab fa-linkedin">
+                            </v-btn-contact>
+                            <v-btn-contact url="https://gitlab.com/users/jeremieSIMPLON6/projects" icon="fab fa-gitlab">
+                            </v-btn-contact>
+                            <v-btn-contact url="https://github.com/jchabert0/jchabert0.github.io" icon="fab fa-github">
+                            </v-btn-contact>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!--
+            <div v-for="circle in circles">
+                <div style="border-radius: 100%; animation: scale ease-out 0s alternate infinite;
+                        position: absolute; background-color: #7cb3fc; opacity: .5;" :style="circle.style">
+                </div>
+            </div>
+            -->
     </section>
 
     <!-- Vue.js dévelopment ( /!\ https necessary )-->
