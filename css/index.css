@@ -1,3 +1,34 @@
+<<<<<<< HEAD
+=======
+@-webkit-keyframes translatePos {
+  100% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
+@keyframes translatePos {
+  100% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
+@-webkit-keyframes translateNeg {
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
+@keyframes translateNeg {
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
+>>>>>>> skill
 @-webkit-keyframes scale {
   100% {
     -webkit-transform: scale(1.4);

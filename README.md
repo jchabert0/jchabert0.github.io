@@ -1,2 +1,0 @@
-# Jeremie CHABERT VueJS
-
