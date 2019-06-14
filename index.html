@@ -19,88 +19,122 @@
 </head>
 
 <body>
-
+    <section class="hero is-info is-fullheight is-bold" style="position: relative;" id="home">
+        <span style="text-align: center"> {{message}} </span>
+        <div class="hero-body">
+            <div class="container hero-container">
+                <div class="columns is-centered is-gapless is-multiline is-vcentered">
+                    <div class="column is-half has-text-centered" style="margin-bottom: 2rem;">
+                            <h1 class="title">
+                                {{title}}
+                            </h1>
+                            <h2 class="subtitle">
+                                {{subtitle}}
+                            </h2>
+                    </div>
+                    <div class="columns is-tablet is-centered">
+                        <div class="column is-half-tablet is-half-desktop has-text-centered">
+                            <v-btn-home url="./assets/pdf/CV_Jeremie_CHABERT.pdf" title="Mon CV" style="color: #209cee"
+                                icon="far fa-file-pdf" target="_blank">
+                            </v-btn-home>
+                        </div>
+                        <div class="column is-half-tablet is-half-desktop has-text-centered">
+                            <v-btn-home url="#skill" title="Mes projets"
+                                style="color: #f5f5f5; background-color: transparent" icon="fas fa-list-ul">
+                            </v-btn-home>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-for="circle in circles">
+                <div style="border-radius: 100%; animation: scale ease-out 0s alternate infinite;
+                    position: absolute; background-color: #7cb3fc; opacity: .5;" :style="circle.style">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="hero is-primary is-bold is-fullheight" id="skill">
-        <div class="columns" v-for="(item, index) in items">
-            <div :class="item.column">
+        <div class="columns" v-for="(projet, index) in projets">
+            <div :class="projet.column">
                 <div class="column">
                     <div class="card" style="height: 100%; border-radius: 30px; padding: 1rem;">
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-4" style="color: hsl(171, 100%, 41%);">{{ item.title }}</p>
+                                    <p class="title is-4" style="color: hsl(171, 100%, 41%);">{{ projet.title }}</p>
                                     <p class="subtitle is-6" style="color: hsl(171, 100%, 41%);" v-if="index === 2">
                                         <span class="icon has-text-primary"> <i class="fas fa-exclamation-triangle"></i>
                                         </span>
                                         <span> {{alert}} </span>
                                     </p>
-                                    <p class="subtitle is-6" style="color: hsl(171, 100%, 41%);"> {{ item.message }}</p>
+                                    <p class="subtitle is-6" style="color: hsl(171, 100%, 41%);">
+                                        {{ projet.message }}
+                                    </p>
                                 </div>
                             </div>
                             <div class="content">
-                                <v-btn-skill :url="item.url" title="visiter" class="is-primary">
+                                <v-btn-skill :url="projet.url" title="visiter" class="is-primary">
                                 </v-btn-skill>
                             </div>
                             <div style="height: 5px; background-color: hsl(171, 100%, 41%); border-radius: 30px; animation: ease-out 0s alternate infinite"
-                                :style="item.animation"></div>
+                                :style="projet.animation"></div>
                         </div>
                     </div>
                 </div>
     </section>
 
-    <!-- Vue.js ( /!\ https necessary )-->
+
+
+
+    <section class="hero is-dark is-fullheight" style="position: relative;" id="contact">
+        <div class="hero-body">
+            <div class="container hero-container">
+                <div class="columns is-gapless is-multiline is-tablet">
+                    <div class="column is-half has-text-centered" style="margin-bottom: 2rem;">
+                        <div class="column">
+                            <h1 class="title">
+                                {{followMe}}
+                            </h1>
+                        </div>
+                        <div class="column">
+                            <v-btn-follow v-for="follow in follows" :url="follow.url" :icon="follow.icon">
+                            </v-btn-follow>
+                        </div>
+                    </div>
+                    <div class="column is-half has-text-centered">
+                        <div class="column">
+                            <h1 class="title">
+                                {{contactMe}}
+                            </h1>
+                        </div>
+                        <div class="column" v-for="contact in contacts">
+                            <v-btn-contact :title="contact.title" :icon="contact.icon">
+                            </v-btn-contact>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="square" v-for="square in squares">
+            <div style="border: solid 2px rgb(255, 101, 183); opacity: .5; position: absolute; animation: scale ease-out 0s alternate infinite;"
+                :style="square.style">
+            </div>
+        </div>
+    </section>
+
+    <!-- Vue.js dévelopment ( /!\ https necessary )-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!--Vue.js production ( /!\ https necessary )
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>-->
+    <script src="./components/v-btn-home.js"></script>
     <script src="./components/v-btn-skill.js"></script>
+    <script src="./components/v-btn-follow.js"></script>
+    <script src="./components/v-btn-contact.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/skill.js"></script>
+    <script src="./js/contact.js"></script>
 
-    <script>
-
-        var skill = new Vue({
-            el: '#skill',
-            data: {
-                alert: ' Non responsive / utiliser desktop ou landscape ',
-                items: [
-                    {
-                        column: 'column is-10', title: 'Mon site V1',
-                        url: './assets/projets/site-v1/index.html',
-                        message: "HTML / CSS / Bootstrap à partir d'une maquette.",
-                        animation: 'animation-name: translatePos; animation-duration: 5s'
-                    },
-                    {
-                        column: 'column is-8  is-offset-4', title: 'Mon site V2',
-                        url: './assets/projets/site-v2/index.html',
-                        message: "HTML / SASS / VUE / BULMA from scratch. Je souhaitais une interface personelle ainsi q'une première approche de Vue.js et Bulma",
-                        animation: 'animation-name: translateNeg; animation-duration: 7s'
-                    },
-                    {
-                        column: 'column is-8', title: 'Combat Pokémon',
-                        url: './assets/projets/pokemon_battle/src/index.html',
-                        message: "HTML/CSS/JS à mon école Simplon, il est mon tout premier projet.",
-                        animation: 'animation-name: translatePos; animation-duration: 9s'
-                    },
-                    {
-                        column: 'column is-7 is-offset-5', title: 'Statistiques',
-                        url: './assets/projets/stats/stats.html',
-                        message: 'JavaScript/ApexchartJS, représentation de statistiques par différents graphiques',
-                        animation: 'animation-name: translateNeg; animation-duration: 10s'
-                    },
-                    {
-                        column: 'column is-8', title: 'Drag & drop',
-                        url: './assets/projets/sortable/sortable.html',
-                        message: "JavaScript/Sortable.js, mise en place d'un drag & drop.",
-                        animation: 'animation-name: translatePos; animation-duration: 8s'
-                    },
-                    {
-                        column: 'column is-9  is-offset-3', title: 'Formulaire date',
-                        url: './assets/projets/date/form.html',
-                        message: "JavaScript exclusivement, validation des champs pour l'enregistrement d'une date.",
-                        animation: 'animation-name: translateNeg; animation-duration: 6s'
-                    },
-                ]
-            }
-        })
-
-    </script>
 </body>
 
 </html>

@@ -47,10 +47,4 @@ body {
 .hero-container {
   z-index: 1;
 }
-
-@media (max-width: 1023px) {
-  .hero-name {
-    padding-bottom: 4rem;
-  }
-}
 /*# sourceMappingURL=index.css.map */
