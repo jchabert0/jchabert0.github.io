@@ -89,7 +89,7 @@
 
 
 
-    <section class="hero is-dark is-fullheight is-fullwidth" id="contact">
+    <section class="hero is-dark is-fullheight is-fullwidth" style="position: relative;" id="contact">
         <div class="hero-body">
             <div class="container hero-container">
                 <div class="columns is-gapless is-multiline is-mobile">
@@ -113,13 +113,11 @@
                 </div>
             </div>
         </div>
-        <!--
-            <div v-for="circle in circles">
-                <div style="border-radius: 100%; animation: scale ease-out 0s alternate infinite;
-                        position: absolute; background-color: #7cb3fc; opacity: .5;" :style="circle.style">
-                </div>
+        <div class="square">
+            <div style="height: 100px; width: 100px; background-color: hsl(328,100%,54%); opacity: .5; position: absolute;
+            left: 100px; top: 50px;">
             </div>
-            -->
+        </div>
     </section>
 
     <!-- Vue.js dévelopment ( /!\ https necessary )-->
