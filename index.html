@@ -54,9 +54,9 @@
                 </div>
             </div>
         </div>
+    </section>
 
-
-        <section class="hero is-primary is-bold is-fullheight" id="skill">
+        <section class="hero is-primary is-bold is-fullheight  is-fullwidth" id="skill">
             <div class="columns" v-for="(projet, index) in projets">
                 <div :class="projet.column">
                     <div class="column">
@@ -71,7 +71,8 @@
                                             </span>
                                             <span> {{alert}} </span>
                                         </p>
-                                        <p class="subtitle is-6" style="color: hsl(171, 100%, 41%);"> {{ projet.message }}
+                                        <p class="subtitle is-6" style="color: hsl(171, 100%, 41%);">
+                                            {{ projet.message }}
                                         </p>
                                     </div>
                                 </div>
@@ -92,74 +93,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>-->
         <script src="./components/v-btn-home.js"></script>
         <script src="./components/v-btn-skill.js"></script>
+        <script src="./js/skill.js"></script>
 
-        <script>
-            var time = (Math.floor(Math.random() * 6) + 1); // number beetween 2 & 6
-            // ☰
-            var home = new Vue({
-                el: '#home',
-                data: {
-                    message: 'work in progress',
-                    title: 'Jérémie CHABERT',
-                    subtitle: 'Développeur front-end',
-                    circles: [
-                        { style: 'height: 200px; width: 200px; left: 10px; bottom: 65px; animation-duration: 5s' },
-                        { style: 'height: 100px; width: 100px; left: 200px; bottom: 230px; animation-duration: 4s' },
-                        { style: 'height: 50px; width: 50px; left: 170px; bottom: 290px; animation-duration: 3s' },
-                        { style: 'height: 50px; width: 50px; left: 250px; bottom: 150px; animation-duration: 4s' },
-                        { style: 'height: 50px; width: 50px; left: 50px; bottom: 480px; animation-duration: 2s' },
-                        { style: 'height: 20px; width: 20px; left: 100px; bottom: 400px; animation-duration: 5s' },
-                        { style: 'height: 30px; width: 30px; left: 280px; bottom: 440px; animation-duration: 3s' },
-                    ]
-                }
-            });
-
-            var skill = new Vue({
-                el: '#skill',
-                data: {
-                    alert: ' Non responsive / utiliser desktop ou landscape ',
-                    projets: [
-                        {
-                            column: 'column is-10', title: 'Mon site V1',
-                            url: './assets/projets/site-v1/index.html',
-                            message: "HTML / CSS / Bootstrap à partir d'une maquette.",
-                            animation: 'animation-name: translatePos; animation-duration: 5s'
-                        },
-                        {
-                            column: 'column is-8  is-offset-4', title: 'Mon site V2',
-                            url: './assets/projets/site-v2/index.html',
-                            message: "HTML / SASS / VUE / BULMA from scratch. Je souhaitais une interface personelle ainsi q'une première approche de Vue.js et Bulma",
-                            animation: 'animation-name: translateNeg; animation-duration: 7s'
-                        },
-                        {
-                            column: 'column is-8', title: 'Combat Pokémon',
-                            url: './assets/projets/pokemon_battle/src/index.html',
-                            message: "HTML/CSS/JS à mon école Simplon, il est mon tout premier projet.",
-                            animation: 'animation-name: translatePos; animation-duration: 9s'
-                        },
-                        {
-                            column: 'column is-7 is-offset-5', title: 'Statistiques',
-                            url: './assets/projets/stats/stats.html',
-                            message: 'JavaScript/ApexchartJS, représentation de statistiques par différents graphiques',
-                            animation: 'animation-name: translateNeg; animation-duration: 10s'
-                        },
-                        {
-                            column: 'column is-8', title: 'Drag & drop',
-                            url: './assets/projets/sortable/sortable.html',
-                            message: "JavaScript/Sortable.js, mise en place d'un drag & drop.",
-                            animation: 'animation-name: translatePos; animation-duration: 8s'
-                        },
-                        {
-                            column: 'column is-9  is-offset-3', title: 'Formulaire date',
-                            url: './assets/projets/date/form.html',
-                            message: "JavaScript exclusivement, validation des champs pour l'enregistrement d'une date.",
-                            animation: 'animation-name: translateNeg; animation-duration: 6s'
-                        },
-                    ]
-                }
-            });
-
-        </script>
+        <script src="./js/home.js"></script>
 </body>
 
 </html>
