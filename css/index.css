@@ -1,28 +1,28 @@
 @-webkit-keyframes translatePos {
   100% {
-    -webkit-transform: translateX(5%);
-            transform: translateX(5%);
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
   }
 }
 
 @keyframes translatePos {
   100% {
-    -webkit-transform: translateX(5%);
-            transform: translateX(5%);
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
   }
 }
 
 @-webkit-keyframes translateNeg {
   100% {
-    -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 
 @keyframes translateNeg {
   100% {
-    -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 
