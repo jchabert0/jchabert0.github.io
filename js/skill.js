@@ -14,13 +14,13 @@ var skill = new Vue({
             },
             {
                 column: 'column is-8  is-offset-4', title: 'Mon site V2',
-                url: './assets/projets/site-v2/index.html',
+                url: './assets/projets/site-version2/index.html',
                 message: "HTML / SASS / VUE / BULMA from scratch. Je souhaitais une interface personelle ainsi q'une première approche de Vue.js et Bulma",
                 animation: 'animation-name: translateNeg; animation-duration: 7s'
             },
             {
                 column: 'column is-8', title: 'Combat Pokémon',
-                url: './assets/projets/pokemon_battle/src/index.html',
+                url: './assets/projets/pokemon/src/index.html',
                 message: "HTML/CSS/JS à mon école Simplon, il est mon tout premier projet.",
                 animation: 'animation-name: translatePos; animation-duration: 9s'
             },
