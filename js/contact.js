@@ -9,8 +9,8 @@ var contact = new Vue({
             { url: 'https://github.com/jchabert0/jchabert0.github.io', icon: 'fab fa-github' },
         ],
         contacts: [
-            { title:'0750393910', icon: 'fas fa-mobile-alt' },
-            { title:'jchabert0@gmail.com', icon: 'fas fa-at' },
+            { title:'0750393910', url:'tel:+750393910', icon: 'fas fa-mobile-alt' },
+            { title:'jchabert0@gmail.com', url:'mailto:jchabert0@gmail.com', icon: 'fas fa-at' },
         ],
         squares: [
             { style: 'height: 200px; width: 200px; right: 10px; top: 65px; animation-duration: 5s' },

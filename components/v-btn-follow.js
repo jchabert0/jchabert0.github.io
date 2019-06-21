@@ -1,8 +1,8 @@
 
 Vue.component('v-btn-follow', {
-    props: ['url', 'icon'],
-    template: '<a style="color: hsl(328,100%,54%); font-size: -webkit-xxx-large; padding: 1rem;" target="_blank"\
+    props: ['title', 'url', 'icon'],
+    template: '<a style="color: hsl(328,100%,54%); margin: 1rem;" target="_blank"\
                 :href="url"> \
-                <i :class="icon"></i> \
+                <i class="btnFollow" :class="icon"></i> \
                 </a>'
 })
