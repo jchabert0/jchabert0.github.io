@@ -44,6 +44,11 @@ body {
   font-family: 'Muli', sans-serif;
 }
 
+.btnHome {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
 .btnHome:hover {
   color: #00d1b2 !important;
   border-color: #00d1b2 !important;
@@ -52,6 +57,15 @@ body {
 .btnHome:focus {
   color: #00d1b2 !important;
   border-color: #00d1b2 !important;
+}
+
+.btnFollow, .btnContact {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.btnFollow:hover, .btnContact:hover {
+  color: #209cee !important;
 }
 
 .hero-container {
