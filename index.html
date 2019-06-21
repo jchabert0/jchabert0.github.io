@@ -33,13 +33,13 @@
                         </div>
                     </div>
                     <div class="column is-tablet has-text-centered">
-                        <v-btn-home url="./assets/pdf/CV_Jeremie_CHABERT.pdf" title="Mon CV"
+                        <v-btn-home url="./assets/pdf/CV_Jeremie_CHABERT.pdf" title="Mon CV" class="btnToCV"
                             style="color: #209cee; margin: 10px;" icon="far fa-file-pdf" target="_blank">
                         </v-btn-home>
-                        <v-btn-home url="#skill" title="Mes projets"
+                        <v-btn-home url="#skill" title="Mes projets" class="btnToSkil"
                             style="color: #f5f5f5; background-color: transparent; margin: 10px;" icon="fas fa-list-ul">
                         </v-btn-home>
-                        <v-btn-home url="#contact" title="Contactez-moi"
+                        <v-btn-home url="#contact" title="Contactez-moi" class="btnToContact"
                             style="color: #f5f5f5; background-color: transparent; margin: 10px;"
                             icon="far fa-address-card">
                         </v-btn-home>
@@ -110,12 +110,12 @@
                             </h1>
                         </div>
                         <div class="columns is-vcentered">
-                        <div class="column">
-                            <v-btn-contact v-for="contact in contacts" :title="contact.title" :url="contact.url"
-                                :icon="contact.icon" style="font-size: xx-large;">
-                            </v-btn-contact>
+                            <div class="column">
+                                <v-btn-contact v-for="contact in contacts" :title="contact.title" :url="contact.url"
+                                    :icon="contact.icon" style="font-size: xx-large;">
+                                </v-btn-contact>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
