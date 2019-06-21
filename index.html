@@ -98,7 +98,8 @@
                             </h1>
                         </div>
                         <div class="column">
-                            <v-btn-follow v-for="follow in follows" :url="follow.url" :icon="follow.icon">
+                            <v-btn-follow v-for="follow in follows" :url="follow.url" :icon="follow.icon"
+                                style="font-size: -webkit-xxx-large;">
                             </v-btn-follow>
                         </div>
                     </div>
@@ -108,10 +109,13 @@
                                 {{contactMe}}
                             </h1>
                         </div>
-                        <div class="column" v-for="contact in contacts">
-                            <v-btn-follow :url="contact.url" :icon="contact.icon">
-                            </v-btn-follow>
+                        <div class="columns is-vcentered">
+                        <div class="column">
+                            <v-btn-contact v-for="contact in contacts" :title="contact.title" :url="contact.url"
+                                :icon="contact.icon" style="font-size: xx-large;">
+                            </v-btn-contact>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
