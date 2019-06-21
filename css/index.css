@@ -44,19 +44,9 @@ body {
   font-family: 'Muli', sans-serif;
 }
 
-.btnHome {
+.btnHome, .btnSkill, .btnFollow, .btnContact {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
-}
-
-.btnHome:hover {
-  color: #00d1b2 !important;
-  border-color: #00d1b2 !important;
-}
-
-.btnHome:focus {
-  color: #00d1b2 !important;
-  border-color: #00d1b2 !important;
 }
 
 .btnToCV:hover {
@@ -89,16 +79,6 @@ body {
 .btnToContact:focus {
   color: #ff65b7 !important;
   border-color: #ff65b7 !important;
-}
-
-.btnSkill {
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-}
-
-.btnFollow, .btnContact {
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
 }
 
 .btnFollow:hover, .btnContact:hover {
