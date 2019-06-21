@@ -59,6 +59,11 @@ body {
   border-color: #00d1b2 !important;
 }
 
+.btnSkill {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
 .btnFollow, .btnContact {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
