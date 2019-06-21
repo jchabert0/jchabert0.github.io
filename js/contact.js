@@ -1,8 +1,8 @@
 var contact = new Vue({
     el: '#contact',
     data: {
-        followMe: 'Suivez moi',
-        contactMe: 'Contactez moi',
+        followMe: 'Suivez-moi',
+        contactMe: 'Contactez-moi',
         follows: [
             { url: 'https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-chabert/', icon: 'fab fa-linkedin' },
             { url: 'https://gitlab.com/users/jeremieSIMPLON6/projects', icon: 'fab fa-gitlab' },
