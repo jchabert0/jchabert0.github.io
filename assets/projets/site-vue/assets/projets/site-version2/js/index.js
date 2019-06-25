@@ -81,11 +81,11 @@ var projects = new Vue({
     el: '#projects',
     data: {
         links: [
-            { url: './assets/projets/cv/portfolio.html', title: 'CV interactif', text: 'Version interactive de mon CV en HTML, CSS et Javascript.' },
-            { url: './assets/projets/pokemon_battle/src/index.html', title: 'Combat Pokémon', text: 'Orienté objet, ce projet est ma première approche du Javascript.' },
-            { url: './assets/projets/stats/stats.html', title: 'Statistiques', text: 'Représentation de statistiques par différents graphiques en ApexChart.js.' },
-            { url: './assets/projets/sortable/sortable.html', title: 'Drag & drop', text: "Avec la librairie Sortable.js, mise en place d'un drag & drop." },
-            { url: './assets/projets/date/form.html', title: 'Formulaire date', text: "Validation des champs pour l'enregistrement d'une date." },
+            { url: '#', title: 'CV interactif', text: 'Version interactive de mon CV en HTML, CSS et Javascript.' },
+            { url: '#', title: 'Combat Pokémon', text: 'Orienté objet, ce projet est ma première approche du Javascript.' },
+            { url: '#', title: 'Statistiques', text: 'Représentation de statistiques par différents graphiques en ApexChart.js.' },
+            { url: '#', title: 'Drag & drop', text: "Avec la librairie Sortable.js, mise en place d'un drag & drop." },
+            { url: '#', title: 'Formulaire date', text: "Validation des champs pour l'enregistrement d'une date." },
         ]
     }
 })

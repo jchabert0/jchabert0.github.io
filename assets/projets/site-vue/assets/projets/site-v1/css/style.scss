@@ -1,0 +1,339 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+
+.navbar {
+    background-color: white !important;
+    box-shadow: 0 0px 20px 0px rgba(201, 201, 201, 0.3);
+    z-index: 10000;
+    top: 0;
+
+    .navbar-brand {
+        font-size: 16px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+    .nav-link{
+        &:hover{
+            color: #ff3b6a !important;
+        }
+    }
+}
+
+.hero {
+    padding: 150px 0;
+    margin-top: 56px;
+
+    .hero-resume {
+        h1 {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            color: rgb(148, 148, 148);
+            font-weight: 300;
+            font-size: 25px;
+
+        }
+
+        .btn {
+            background-image: linear-gradient(-180deg, #fd7054 0, #ff3b6a 100%);
+            box-shadow: 0 7px 29px 0 rgba(254, 89, 105, .3);
+            color: white;
+            padding: 13px 22px 15px 22px;
+            border-radius: 35px;
+            margin-top: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    img {
+        width: 615px;
+        &:after{
+            content:'';
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            display:block;
+        }
+    }
+}
+
+.skills {
+    margin-top: 120px;
+    margin-bottom: 120px;
+.card-box{
+    margin-bottom: 30px;
+}
+    .card {
+        box-shadow: 0 0px 20px 0px rgba(201, 201, 201, 0.3);
+        border: none;
+        height: 100%;
+
+        .card-img-top {
+            display: flex;
+            align-items: center;
+            // height: 100%;
+            height: 200px;
+            img{
+                width: 100px;
+            }
+        }
+
+        .card-body {
+            padding: 20px;
+            height: 200px;
+            .card-text {
+                h3 {
+                    text-align: center;
+                    font-size: 23px;
+                    font-weight: 400;
+                }
+
+                ul {
+                    text-align: center;
+                    padding: 0;
+                    list-style: none;
+                    margin-top: 25px;
+                    align-items:center; 
+                }
+            }
+        }
+    }
+}
+
+
+.about {
+    background: linear-gradient(-180deg, #fd7054 0, #ff3b6a 100%);
+    padding: 120px 0;
+    color: white;
+
+    .about-resume {
+        padding-left: 30px;
+    }
+
+    img {
+        height: 190px;
+        width: 190px;
+        object-fit: cover;
+    }
+
+}
+
+.citation {
+    font-style: italic;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .citation-text {
+        h4 {
+            font-weight: 300;
+
+            span {
+                color: #ff3b6a;
+                font-weight: 900;
+                font-size: 25px;
+            }
+            figcaption {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+
+        h5 {
+            font-weight: 400;
+        }
+    }
+}
+
+.projects {
+    margin-bottom: 100px;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            // transform: translateY(-2px);
+            background-color: red;
+        }
+    }
+
+    .card {
+        background: linear-gradient(-180deg, #fd7054 0, #ff3b6a 100%);
+        text-align: center;
+        color: white;
+        border: none;
+        padding: 30px;
+    }
+
+    h5 {
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+    .card-text {
+        height: 100%;
+
+        p {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+    }
+
+}
+
+
+.mail-btn {
+    background-image: linear-gradient(-180deg, #fd7054 0, #ff3b6a 100%);
+    border-radius: 40px;
+    box-shadow: 0 7px 29px 0 rgba(254, 89, 105, 0.3);
+    padding: 13px 22px 15px 22px;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+@media (max-width: 992px) {
+    .about {
+        .img-resume {
+            img {
+                width: 160px;
+                height: 160px;
+            }
+
+        }
+    }
+
+    .hero-resume {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero {
+        .hero-img {
+            
+            img {
+                width: auto;
+            }
+        }
+
+        .hero-resume {
+            margin-top: 30px;
+
+            h1 {
+                display: flex;
+                justify-content: center;
+            }
+
+            h2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .hero-btn {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about {
+        .img-resume {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            img {
+                width: 160px;
+                height: 160px;
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .about {
+        .img-resume {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            img {
+                width: 160px;
+                height: 160px;
+
+            }
+
+        }
+    }
+
+    .social-links {
+        margin: auto !important;
+    }
+
+    .nav-link {
+        text-align: center;
+
+    }
+
+    .navbar {
+        .container {
+            width: 100%;
+            max-width: none;
+        }
+    }
+
+}
+
+
+#cv-btn {
+    margin-right: 15px;
+    background-image: linear-gradient(-180deg, #fd7054 0, #ff3b6a 100%);
+    border: none;
+    border-radius: 20px;
+
+    .fa-download {
+        margin-right: 10px;
+    }
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+      li {
+        padding: 10px;
+        font-size: 25px;
+        a {
+            color: black;
+            &:hover {
+                color: #ff3b6a !important;
+              }
+          }
+        
+    }
+}

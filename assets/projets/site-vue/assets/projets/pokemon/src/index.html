@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokemon Battle</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./css/pokemon-style..css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../src/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  
+  <div>
+    <img src="./images/pokemon game.png" id="titre">
+  </div>
+
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12" id="container">
+        <img src="../src/images/console.jpg" alt="console" id="console">
+
+        <div class="row">
+          <div class="col-2 btng">
+            <button class="btn" id="btnon">
+              <p>ON / OFF</p>
+            </button>
+            <button class="btn" id="btnrandom">
+              <p>RANDOM</p>
+            </button>
+            <button class="btn" id="btnsound">
+              <p>SOUND</p>
+            </button>
+
+
+
+
+          </div>
+
+
+
+          <div class="col-8 ecran" id="ecran">
+            <img src="../src/images/ecranoff.png" alt="" id="ecranoff">
+            <p id="prod">&copy Producted by Jérémie CHABERT & Abdelrazak SAKHRI</p>
+
+
+            <div class="opponent">
+
+              <p>HP :
+                <progress value="" max="" id="lifeOpponent"></progress>
+              </p>
+              <img src="" alt="" id="imgOpponent">
+            </div>
+            <div class="comment">
+              <p id="commentaire"></p>
+              <p id="commentaireOpponent"></p>
+            </div>
+
+
+
+            <div class="player">
+
+              <p>HP :
+                <progress value="" max="" id="lifePlayer"></progress>
+              </p>
+              <img src="" alt="" id="imgPlayer">
+            </div>
+
+
+
+
+            <div class="comment-player">
+              <p id="commentaire"></p>
+              <p id="commentairePlayer"></p>
+            </div>
+
+
+
+          </div>
+
+          <div class="manette btnd" id="btn">
+            <button class="btn" id="btnAttack">
+              <p>ATTACK</p>
+            </button>
+
+            <button class="btn" id="btnHeal">
+              <p>HEAL</p>
+            </button>
+
+            <a>
+              <button class="btn" id="btnRun">
+
+                <p>RUN</p>
+              </button>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <script src="../dist/bundle.js"></script>
+
+</body>
+
+</html>

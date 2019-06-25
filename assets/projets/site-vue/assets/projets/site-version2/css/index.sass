@@ -1,0 +1,171 @@
+
+$black: #2d2d2d
+$black-secondary: #303030
+$black-third: #919191
+$white: #e2e2e2
+$blue: rgb(112,255,234)
+$yellow: rgb(245,255,101)
+$green: rgb(110,255,91)
+$background-icon: -webkit-gradient(linear, left top, left bottom, from($blue), to($green))
+$background-banner: linear-gradient(0.25turn, $blue 40%, $yellow, $green)
+$background-banner-mobile: linear-gradient(0.50turn, $blue 50%, $yellow, $green)
+$box: -1px 1px 2px 1px rgba(0, 0, 0, 0.7), -1px 2px 5px rgba(255, 255, 255, 0.6) inset
+$transition: .2s ease-in-out
+$header-margin: 20%
+$margin-section: 150px
+
+body
+    background-color: $black
+.is-centered
+    text-align: center
+
+.navbar, .navbar-menu
+    background-color: $black-secondary !important
+.navbar-burger > span
+    color: $white
+.nav-icon
+    font-size: 30px
+    padding: 10px !important
+    background: $background-icon
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+.nav-text
+    color: $white !important
+    font-size: 15px
+    padding: .75rem !important
+    transition: $transition
+    &:hover
+        color: $green !important
+        background-color: $black-secondary !important
+
+#header
+    margin-top: $margin-section
+.header-text-top
+    margin-left: $header-margin
+    text-decoration-color: $blue
+    color: $white
+    font-size: 30px
+.header-text-middle
+    text-decoration-color: $yellow
+    color: $white
+    font-size: 30px
+.header-text-end
+    text-decoration-color: $green
+    color: $white
+    font-size: 30px
+.header-text-color-top
+    text-decoration-line: overline
+    font-size: 30px
+    color: $blue
+    text-decoration-color: $blue
+.header-text-color-middle
+    text-decoration-line: overline
+    font-size: 30px
+    text-decoration-color: $yellow
+    color: $yellow
+.header-text-color-end
+    margin-right: $header-margin
+    text-decoration-line: overline
+    font-size: 30px
+    text-decoration-color: $green
+    color: $green
+.header-btn
+    transition: $transition
+    margin-left: $margin-section / 2
+    margin-top: $margin-section / 2
+    color: $white !important
+    border-color: $white !important
+    &:hover
+        border-color: $yellow !important
+        color: $yellow !important
+        background-color: $black !important
+
+#main
+    margin-top: $margin-section / 2
+.main-hero
+    background: $background-banner 
+    @media (max-width: 1023px)
+        background: $background-banner-mobile
+.main-photo
+    height: 250px
+    border-radius: 10px
+.main-btn
+    transition: $transition
+    margin: 1rem 0 1rem 0
+    color: $black !important
+    border-color: $black !important
+    &:hover
+        background-color: $black !important
+        color: $white !important
+.main-icon
+    font-size: 20px
+    padding: 10px
+    color: $black
+    transition: $transition
+    &:hover
+        color: $yellow
+
+#skill
+    margin-top: $margin-section
+.skill-card
+    border-top: 8px solid $green
+    border-radius: 4px
+.skill-card
+    margin: 1rem
+    background-color: $white !important
+.skill-card-subtitle
+    color: $green !important
+    background-color: $black-third
+    border-radius: 30px
+    margin-top: 20px
+    padding: 20px
+    text-align: center
+.skill-card-title
+    padding: 10px 20px 10px 20px
+.skill-card-content
+    background: #222
+    color: white
+#projects
+    margin-top: $margin-section
+.projects-message
+    margin: 1rem
+    background-color: $white !important
+.projects-message-body
+    border-color: $blue !important
+    border-width: 0 0 0 8px !important
+    padding: 
+.projects-message-body-title
+    padding: 10px 20px 10px 20px
+.projects-message-body-text
+    padding: 20px
+.projects-btn
+    margin: 10px 20px 10px 20px
+    transition: $transition
+    color: $black !important
+    border-color: $black !important
+    &:hover
+        border-color: $blue !important
+        color: $blue !important
+        background-color: $white !important
+
+#footer
+    margin-top: $margin-section
+.footer
+    background-color: $black-secondary !important
+.footer-text
+    color: $white !important
+.footer-name
+    background: $background-icon
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+.footer-technos
+    margin: 40px
+.footer-logo
+    font-size: 20px
+    padding: 10px
+    color: $blue
+    transition: $transition
+    &:hover
+        color: $green
+.footer-bulma
+    font-size: initial

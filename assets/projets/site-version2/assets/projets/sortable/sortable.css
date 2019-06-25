@@ -1,0 +1,19 @@
+/* style de l'emplacement temporaire de la card */
+.ghost {
+  opacity: 0.5;
+}
+
+/* style de la card draggée*/
+.dragg {
+  opacity: 1;
+  font-size: 200%;
+}
+.title {
+  text-decoration: underline;
+}
+#title1 {
+  text-decoration: underline;
+}
+#title2 {
+  text-decoration: underline;
+}
