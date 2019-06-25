@@ -82,7 +82,7 @@ var projects = new Vue({
     data: {
         links: [
             { url: './assets/projets/cv/portfolio.html', title: 'CV interactif', text: 'Version interactive de mon CV en HTML, CSS et Javascript.' },
-            { url: './assets/projets/pokemon_battle/src/index.html', title: 'Combat Pokémon', text: 'Orienté objet, ce projet est ma première approche du Javascript.' },
+            { url: 'https://www.simplonlyon.fr/promo6/jchabert/pokemon_battle/src/', title: 'Combat Pokémon', text: 'Orienté objet, ce projet est ma première approche du Javascript.' },
             { url: './assets/projets/stats/stats.html', title: 'Statistiques', text: 'Représentation de statistiques par différents graphiques en ApexChart.js.' },
             { url: './assets/projets/sortable/sortable.html', title: 'Drag & drop', text: "Avec la librairie Sortable.js, mise en place d'un drag & drop." },
             { url: './assets/projets/date/form.html', title: 'Formulaire date', text: "Validation des champs pour l'enregistrement d'une date." },
