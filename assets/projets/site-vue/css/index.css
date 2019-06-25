@@ -1,0 +1,97 @@
+@-webkit-keyframes translatePos {
+  100% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
+@keyframes translatePos {
+  100% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
+@-webkit-keyframes translateNeg {
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
+@keyframes translateNeg {
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
+@-webkit-keyframes scale {
+  100% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@keyframes scale {
+  100% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+.btnHome, .btnSkill, .btnFollow, .btnContact {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.btnToCV:hover {
+  color: #f5f5f5 !important;
+  background-color: transparent !important;
+  border-color: #f5f5f5 !important;
+}
+
+.btnToCV:focus {
+  color: #f5f5f5 !important;
+  background-color: transparent !important;
+  border-color: #f5f5f5 !important;
+}
+
+.btnToSkill:hover {
+  color: #00d1b2 !important;
+  border-color: #00d1b2 !important;
+}
+
+.btnToSkill:focus {
+  color: #00d1b2 !important;
+  border-color: #00d1b2 !important;
+}
+
+.btnToContact:hover {
+  color: #ff65b7 !important;
+  border-color: #ff65b7 !important;
+}
+
+.btnToContact:focus {
+  color: #ff65b7 !important;
+  border-color: #ff65b7 !important;
+}
+
+.btnFollow:hover, .btnContact:hover {
+  color: #209cee !important;
+}
+
+.hero-container {
+  z-index: 1;
+}
+
+@media (max-width: 1023px) {
+  .hero-name {
+    margin-bottom: 4rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
