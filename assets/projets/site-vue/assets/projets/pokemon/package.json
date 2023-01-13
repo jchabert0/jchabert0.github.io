@@ -22,7 +22,7 @@
   "homepage": "https://gitlab.com/jeremieSIMPLON6/pokemon_battle#README",
   "devDependencies": {
     "webpack": "^4.11.1",
-    "webpack-cli": "^3.0.2"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "moment": "^2.22.2"
